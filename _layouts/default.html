@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width" />
+        <link href='//fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+        <link href="//cdnjs.cloudflare.com/ajax/libs/foundation/4.1.2/css/normalize.min.css" rel="stylesheet">
+        <link href="//cdnjs.cloudflare.com/ajax/libs/foundation/4.1.2/css/foundation.min.css" rel="stylesheet">
+        <link href="/static/site.css" rel="stylesheet">
+        <style>
+            body { font-family: 'Oxygen', Arial, sans-serif; }
+        </style>
+        <link rel="shortcut icon" href="/static/img/favicon.ico" />
+    </head>
+    <body>
+        {% include header.html %}
+
+        {{ content }}
+
+        {% include footer.html %}
+        <script>
+           document.write('<script src=' +
+           ('__proto__' in {} ? '//cdnjs.cloudflare.com/ajax/libs/zepto/1.0rc1/zepto.min' : '//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min') +
+           '.js><\/script>')
+        </script>
+    </body>
+</html>

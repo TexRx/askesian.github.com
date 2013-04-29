@@ -1,0 +1,9 @@
+.brand { margin-bottom: 0; }
+
+.article-list {
+    list-style: none;
+}
+
+.list-item-excerpt {
+    padding: 0.625em 0;
+}

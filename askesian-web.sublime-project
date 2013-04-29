@@ -1,0 +1,21 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/Chris/Projects/askesian.github.com",
+			"folder_exclude_patterns":
+			[
+				"_assets", "_plugins", "_site", "img"
+			],
+			"file_exclude_patterns":
+			[
+				".gitignore", "CNAME", "README", "_config.yml", "archive.html", "atom.xml",
+				"robots.txt", "index.md", "categories.html", "tags.html"
+			]
+		}
+	],
+	"settings":
+	{
+		"tab_size": 4
+	}
+}

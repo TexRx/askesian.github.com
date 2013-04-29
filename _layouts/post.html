@@ -1,0 +1,26 @@
+---
+layout: default
+blog: true
+---
+<div class="row">
+    <div class="small-12 large-12 columns">
+        <div class="article">
+            <div class="article-header">
+                <h3 class="article-header-title">{{ page.title }}</h3>
+                <div class="article-header-date">
+                    {{ page.date | date: "%b %Y" }}
+                </div>
+            </div>
+            <div class="article-body">
+                {{ content }}
+            </div>
+            <div class="article-footer">
+                <div class="article-footer-date">
+                    {% if page.updated_at %}
+                        revised: {{ page.updated_at }}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,40 +1,24 @@
-<!DOCTYPE html>
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <title>askesian.net</title>
-        <meta name="viewport" content="width=device-width" />
-        <link href='//fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
-        <link href="//cdnjs.cloudflare.com/ajax/libs/foundation/4.1.2/css/normalize.min.css" rel="stylesheet">
-        <link href="//cdnjs.cloudflare.com/ajax/libs/foundation/4.1.2/css/foundation.min.css" rel="stylesheet">
-        <style>
-            body { font-family: 'Oxygen', Arial, sans-serif; }
-        </style>
-    </head>
-    <body>
-        <div class="row">
-            <div class="small-12 large-12 columns">
-                <h1>What did you expect?</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="small-4 large-6 columns">
-                <h2>
-                    <a href="require-js-with-zepto.md">Using Zepto or jQuery with Require.js</a>
-                </h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="small-4 large-6 columns">
-                <!-- more content here -->
-            </div>
-        </div>
-        <script>
-           document.write('<script src=' +
-           ('__proto__' in {} ? '//cdnjs.cloudflare.com/ajax/libs/zepto/1.0rc1/zepto.min' : '//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min') +
-           '.js><\/script>')
-        </script>
-    </body>
-</html>
+---
+layout: default
+title: askesian
+---
+
+<div class="row">
+    <div class="small-12 large-6 end columns">
+        <h3 class="column-title">Lastest Posts</h3>
+        <ul id="posts" class="article-list">
+            {% for post in site.posts %}
+            <li class="list-item">
+                <h4 class="post-title">
+                    <a href="{{ post.url }}" class="list-item-link list-item-title">{{ post.title }}</a>
+                </h4>
+                <div class="list-item-date"><span class="label">{{ post.date | date: "%b %Y" }}</span></div>
+                <div class="list-item-excerpt">
+                    {{ post.excerpt }}
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
 
