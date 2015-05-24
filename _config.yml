@@ -1,14 +1,10 @@
-safe: false
-auto: true
-server: true
-server_port: 4000
 
-source: .
-destination: ./_site
-plugins: ./_plugins
+url: http://localhost:9999
+twitter_username: askesian
+github_username:  askesian
 
 lsi: false
-pygments: true
+highlighter: true
 markdown: kramdown
 permalink: '/:title'
 
@@ -26,3 +22,6 @@ kramdown:
         coderay_tab_width: 4
         coderay_bold_every: 10
         coderay_css: style
+
+source: ./app
+destination: ./build
