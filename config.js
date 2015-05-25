@@ -47,7 +47,7 @@ module.exports = {
       dest: development
     },
     production: {
-      src: src + '/CNAME',
+      src: [src + '/CNAME', src + '/README.md'],
       dest: production
     }
   },
