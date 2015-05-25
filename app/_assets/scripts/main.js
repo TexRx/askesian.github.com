@@ -12,9 +12,9 @@
         console.log("App is initialized");
       }
     }
-  };
+  }();
 
-  window.Askesian = askesian();
+  window.Askesian = askesian;
 
   askesian.init();
 
