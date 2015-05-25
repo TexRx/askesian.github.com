@@ -130,6 +130,6 @@ module.exports = {
   },
   deploy: {
     branch: 'master',
-    push: false
+    push: true
   }
 };
