@@ -11,14 +11,8 @@
         <meta name="twitter:description" content="The home of askesian">
         <meta name="twitter:creator" content="@askesian">
         <meta name="twitter:domain" content="askesian.net">
-        <link href='//fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
-        <link href="//cdnjs.cloudflare.com/ajax/libs/foundation/4.1.2/css/normalize.min.css" rel="stylesheet">
-        <link href="//cdnjs.cloudflare.com/ajax/libs/foundation/4.1.2/css/foundation.min.css" rel="stylesheet">
-        <link href="/static/site.css" rel="stylesheet">
+        <link href="/assets/css/main.css" rel="stylesheet">
         <meta name="google-site-verification" content="U6YPESxNVHg41T6gYx640_oFdniD2hQZ6jaiYWJBsUY" />
-        <style>
-            body { font-family: 'Oxygen', Arial, sans-serif; }
-        </style>
         <link rel="shortcut icon" href="/static/img/favicon.ico" />
     </head>
     <body>
@@ -27,10 +21,6 @@
         {{ content }}
 
         {% include footer.html %}
-        <script>
-           document.write('<script src=' +
-           ('__proto__' in {} ? '//cdnjs.cloudflare.com/ajax/libs/zepto/1.0rc1/zepto.min' : '//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min') +
-           '.js><\/script>')
-        </script>
+        <script src="/assets/js/all.js"></script>
     </body>
 </html>

@@ -15,18 +15,23 @@
     "gulp-filter": "^2.0.2",
     "gulp-gh-pages": "^0.5.1",
     "gulp-git": "^1.2.4",
+    "gulp-htmlmin": "^1.1.1",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-jshint": "^1.11.0",
     "gulp-load-plugins": "^0.10.0",
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.1",
     "gulp-sequence": "^0.3.2",
+    "gulp-size": "^1.2.1",
     "gulp-sourcemaps": "^1.5.2",
-    "gulp-uglify": "^1.2.0",
-    "htmlmin": "^0.0.2"
+    "gulp-uglify": "^1.2.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "node_modules/gulp/bin/gulp.js"
+    "gulp": "node_modules/gulp/bin/gulp.js",
+    "build": "npm run gulp",
+    "deploy": "npm run gulp deploy"
   },
   "repository": {
     "type": "git",

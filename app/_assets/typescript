@@ -1,0 +1,899 @@
+Script started on Sun May 24 19:53:27 2015
+^C^C                                                                                            ]0;~/Projects/askesian.github.com/app/_assets
+[34m~/Projects/askesian.github.com/app/_assets[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[59C[36m[39m8[4ms[24m[4ms[4mc[24m[4ms[4mc[4mr[24m[4mr[4mi[24m[4mi[4mp[24m[24m[32ms[24m[32mc[24m[32mr[24m[32mi[24m[32mp[32mt[39m[39m[4ms[39m[4mc[39m[4mr[39m[4mi[39m[4mp[39m[4mt[4ms[24m[?1l>[0m[23m[24m[J[35m❯[39m [4mscripts[24m[K
+]0;_assets: scripts                                                                                            ]0;~/Projects/askesian.github.com/app/_assets/scripts
+[34m~/Projects/askesian.github.com/app/_assets/scripts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[67C[36m[39m8[32ml[39m[32ml[32ma[39m[?1l>[0m[23m[24m[J[35m❯[39m [32mla[39m[K
+]0;scripts: ls -G -lh -Atotal 8
+-rw-r--r--  1 askesian  staff   198B May 24 19:40 main.js
+                                                                                            ]0;~/Projects/askesian.github.com/app/_assets/scripts
+[34m~/Projects/askesian.github.com/app/_assets/scripts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[67C[36m[39m8[4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31mb[0m[39m[0m[32ms[0m[32mu[0m[32mb[32ml[39m [4mm[24m[4mm[4ma[24m[4ma[4mi[24m[4mi[4mn[24m[4mn[4m.[24m[4m.[4mj[24m[4mj[4ms[24m[?1l>[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mmain.js[24m[K
+]0;scripts: subl main.js                                                                                            ]0;~/Projects/askesian.github.com/app/_assets/scripts
+[34m~/Projects/askesian.github.com/app/_assets/scripts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[67C[36m[39m8[32m.[39m[39m[4m.[4m.[24m[?1l>[0m[23m[24m[J[35m❯[39m [4m..[24m[K
+]0;scripts: ..                                                                                            ]0;~/Projects/askesian.github.com/app/_assets
+[34m~/Projects/askesian.github.com/app/_assets[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[59C[36m[39m8[32m.[39m[39m[4m.[4m.[24m[?1l>[0m[23m[24m[J[35m❯[39m [4m..[24m[K
+]0;_assets: ..                                                                                            ]0;~/Projects/askesian.github.com/app
+[34m~/Projects/askesian.github.com/app[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[51C[36m[39m8[32ml[39m[32ml[32ma[39m[?1l>[0m[23m[24m[J[35m❯[39m [32mla[39m[K
+]0;app: ls -G -lh -Atotal 32
+-rw-r--r--@ 1 askesian  staff    10K May 24 15:38 .DS_Store
+drwxr-xr-x  9 askesian  staff   306B May 24 19:38 [34m_assets[39;49m[0m
+drwxr-xr-x  4 askesian  staff   136B May 24 14:16 [34m_includes[39;49m[0m
+drwxr-xr-x  4 askesian  staff   136B May 24 14:16 [34m_layouts[39;49m[0m
+drwxr-xr-x  3 askesian  staff   102B May 24 14:16 [34m_posts[39;49m[0m
+-rw-r--r--  1 askesian  staff   505B May 24 16:30 index.html
+                                                                                            ]0;~/Projects/askesian.github.com/app
+[34m~/Projects/askesian.github.com/app[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[51C[36m[39m8[4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31mb[0m[39m[0m[32ms[0m[32mu[0m[32mb[32ml[39m [4mi[24m[4mi[4mn[24m[4mn[4md[24m[4md[4me[24m[4me[4mx[24m[4mx[4m.[24m[4m.[4mh[24m[4mh[4mt[24m[4mt[4mm[24m[4mm[4ml[24m[?1l>[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mindex.html[24m[K
+]0;app: subl index.html                                                                                            ]0;~/Projects/askesian.github.com/app
+[34m~/Projects/askesian.github.com/app[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[51C[36m[39m8[32ml[39m[32ml[32ma[39m[?1l>[0m[23m[24m[J[35m❯[39m [32mla[39m[K
+]0;app: ls -G -lh -Atotal 32
+-rw-r--r--@ 1 askesian  staff    10K May 24 15:38 .DS_Store
+drwxr-xr-x  9 askesian  staff   306B May 24 19:38 [34m_assets[39;49m[0m
+drwxr-xr-x  4 askesian  staff   136B May 24 14:16 [34m_includes[39;49m[0m
+drwxr-xr-x  4 askesian  staff   136B May 24 14:16 [34m_layouts[39;49m[0m
+drwxr-xr-x  3 askesian  staff   102B May 24 14:16 [34m_posts[39;49m[0m
+-rw-r--r--  1 askesian  staff   505B May 24 16:30 index.html
+                                                                                            ]0;~/Projects/askesian.github.com/app
+[34m~/Projects/askesian.github.com/app[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[51C[36m[39m8[32m_[39m[39m[4m_[4mi[24m[4m_[4mi[4mn[24m[4mn[4mc[24m[4mc[4ml[24m[33m[39m[0m[23m[24m[J[35m❯[39m [4m_includes[1m[4m/[0m[24m[K[4ms[24m[0m[24m [?1l>[0m[23m[24m[J[35m❯[39m [4m_includes[24m[K
+]0;app: _includes                                                                                            ]0;~/Projects/askesian.github.com/app/_includes
+[34m~/Projects/askesian.github.com/app/_includes[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[61C[36m[39m8[32ml[39m[32ml[32ma[39m[?1l>[0m[23m[24m[J[35m❯[39m [32mla[39m[K
+]0;_includes: ls -G -lh -Atotal 16
+-rw-r--r--  1 askesian  staff   223B May 24 14:16 footer.html
+-rw-r--r--  1 askesian  staff   224B May 24 14:16 header.html
+                                                                                            ]0;~/Projects/askesian.github.com/app/_includes
+[34m~/Projects/askesian.github.com/app/_includes[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[61C[36m[39m8[4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31ml[0m[39m[1m[31ml[1m[31mb[0m[39m [4mh[24m[4mh[4me[24m[4mh[24m[24m [24m [1m[31ml[0m[39m[0m[39m [0m[32ms[0m[32mu[39m[0m[39m [1m[31ms[1m[31mu[1m[31mb[0m[39m[0m[32ms[0m[32mu[0m[32mb[32ml[39m [4mh[24m[4mh[4me[24m[4me[4ma[24m[4ma[4md[24m[4md[4me[24m[4me[4mr[24m[4mr[4m.[24m[4m.[4mh[24m[8D[4m[33mh[4m[33me[4m[33ma[4m[33md[4m[33me[4m[33mr[4m[33m.[4m[33mh[4m[33mm[24m[39m[4m[33mm[4m[33mt[24m[39m[4m[33mt[4m[33ml[24m[39m[4m[33mt[24m[39m[24m[39m [4m[33mm[24m[39m[24m[39m [9D[39m[4mh[39m[4me[39m[4ma[39m[4md[39m[4me[39m[4mr[39m[4m.[39m[4mh[24m[24m[39m [4mh[4mt[24m[4mt[4mm[24m[4mm[4ml[24m[?1l>[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mheader.html[24m[K
+]0;_includes: subl header.html                                                                                            ]0;~/Projects/askesian.github.com/app/_includes
+[34m~/Projects/askesian.github.com/app/_includes[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[61C[36m[39m8[32m.[39m[?1l>[0m[23m[24m[J[35m❯[39m [32m.[39m[K
+]0;_includes: ..: not enough arguments
+                                                                                            ]0;~/Projects/askesian.github.com/app/_includes
+[34m~/Projects/askesian.github.com/app/_includes[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[31m❯[39m [K[?1h=[0m[23m[24m[J[31m❯[39m [K7[A[1G[61C[36m[39m8[32m.[39m[39m[4m.[4m.[24m[?1l>[0m[23m[24m[J[31m❯[39m [4m..[24m[K
+]0;_includes: ..                                                                                            ]0;~/Projects/askesian.github.com/app
+[34m~/Projects/askesian.github.com/app[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K[32m_[39m[39m[4m_[4ml[24m7[A[1G[51C[36m[39m8[4m_[4ml[4ma[24m[4ma[4my[24m[4my[4mo[24m[4mo[4mu[24m[33m[39m[0m[23m[24m[J[35m❯[39m [4m_layouts[1m[4m/[0m[24m[K[4ms[24m[0m[24m [?1l>[0m[23m[24m[J[35m❯[39m [4m_layouts[24m[K
+]0;app: _layouts                                                                                            ]0;~/Projects/askesian.github.com/app/_layouts
+[34m~/Projects/askesian.github.com/app/_layouts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[60C[36m[39m8[32ml[39m[32ml[32ma[39m[?1l>[0m[23m[24m[J[35m❯[39m [32mla[39m[K
+]0;_layouts: ls -G -lh -Atotal 16
+-rw-r--r--  1 askesian  staff   1.6K May 24 14:16 default.html
+-rw-r--r--  1 askesian  staff   769B May 24 14:16 post.html
+                                                                                            ]0;~/Projects/askesian.github.com/app/_layouts
+[34m~/Projects/askesian.github.com/app/_layouts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[60C[36m[39m8[4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31mb[0m[39m[0m[32ms[0m[32mu[0m[32mb[32ml[39m [4md[24m[4md[4me[24m[4me[4mf[24m[4mf[4ma[24m[4ma[4mu[24m[4mu[4ml[24m[4ml[4mt[24m[4mt[4m.[24m[33m[39m[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mdefault.html[24m[1m [0m[K[0m [?1l>[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mdefault.html[24m[K
+]0;_layouts: subl default.html                                                                                            ]0;~/Projects/askesian.github.com/app/_layouts
+[34m~/Projects/askesian.github.com/app/_layouts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[60C[36m[39m8[32m.[39m[39m[4m.[4m.[24m[?1l>[0m[23m[24m[J[35m❯[39m [4m..[24m[K
+]0;_layouts: ..                                                                                            ]0;~/Projects/askesian.github.com/app
+[34m~/Projects/askesian.github.com/app[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[51C[36m[39m8[32m_[39m[39m[4m_[4mi[24m[4m_[4mi[4mn[24m[4mn[4mc[24m[4mc[4ml[24m[4m[33m_[4m[33mi[4m[33mn[4m[33mc[4m[33ml[4m[33mj[24m[39m[32m[39m[0m[23m[24m[J[35m❯[39m [4m_includes[1m[4m/[0m[24m[K[4ms[24m[0m[24m [?1l>[0m[23m[24m[J[35m❯[39m [4m_includes[24m[K
+]0;app: _includes                                                                                            ]0;~/Projects/askesian.github.com/app/_includes
+[34m~/Projects/askesian.github.com/app/_includes[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[61C[36m[39m8[4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31ml[0m[39m[1m[31ml[1m[31mb[0m[39m [4mf[24m[4mf[4mo[24m[4mo[4mo[24m[4mo[4mt[24m[33m[39m[0m[23m[24m[J[35m❯[39m [1m[31msulb[0m[39m [4mfooter.html[24m[1m [0m[K[0m [4mm[24m[24m [4mt[24m[24m [4mh[24m[24m [4m.[24m[24m [4mr[24m[24m [4me[24m[24m [4mt[24m[24m [4mo[24m[24m [4mo[24m[24m [4mf[24m[24m [24m [1m[31ml[0m[39m[0m[39m [0m[32ms[0m[32mu[39m[0m[39m [4m[33ms[24m[39m[39m [24m[39m [4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31mb[0m[39m[0m[32ms[0m[32mu[0m[32mb[32ml[39m [4mf[24m[4mf[4mo[24m[4mo[4mo[24m[4mo[4mt[24m[4mt[4me[24m[4me[4mr[24m[33m[39m[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mfooter.html[24m[1m [0m[K[0m [?1l>[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mfooter.html[24m[K
+]0;_includes: subl footer.html                                                                                            ]0;~/Projects/askesian.github.com/app/_includes
+[34m~/Projects/askesian.github.com/app/_includes[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[61C[36m[39m8[32m.[39m[39m[4m.[4m.[24m[?1l>[0m[23m[24m[J[35m❯[39m [4m..[24m[K
+]0;_includes: ..                                                                                            ]0;~/Projects/askesian.github.com/app
+[34m~/Projects/askesian.github.com/app[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[51C[36m[39m8[4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31mb[0m[39m[0m[32ms[0m[32mu[0m[32mb[32ml[39m[1m[31ms[1m[31mu[1m[31mb[0m[39m[39m [0m[32ms[0m[32mu[39m[0m[39m [4m[33ms[24m[39m[39m [24m[39m [32m_[39m[39m[4m_[4ml[24m[4m_[4ml[4ma[24m[4ma[4my[24m[4my[4mo[24m[4mo[4mu[24m[33m[39m[0m[23m[24m[J[35m❯[39m [4m_layouts[1m[4m/[0m[24m[K[4ms[24m[0m[24m [?1l>[0m[23m[24m[J[35m❯[39m [4m_layouts[24m[K
+]0;app: _layouts                                                                                            ]0;~/Projects/askesian.github.com/app/_layouts
+[34m~/Projects/askesian.github.com/app/_layouts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[60C[36m[39m8[4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31ml[0m[39m[1m[31ml[1m[31mb[0m[39m[1m[31ml[0m[39m[0m[39m [0m[32ms[0m[32mu[39m[0m[39m [1m[31ms[1m[31mu[1m[31mb[0m[39m[0m[32ms[0m[32mu[0m[32mb[32ml[39m [4md[24m[4md[4me[24m[4me[4mf[24m[4mf[4ma[24m[33m[39m[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mdefault.html[24m[1m [0m[K[0m [?1l>[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mdefault.html[24m[K
+]0;_layouts: subl default.html                                                                                            ]0;~/Projects/askesian.github.com/app/_layouts
+[34m~/Projects/askesian.github.com/app/_layouts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[60C[36m[39m8[4m[33mc[24m[39m[24m[1m[31mc[1m[31ma[0m[39m[0m[32mc[0m[32ma[32ml[39m[1m[31mc[1m[31ma[0m[39m[39m [0m[4m[33mc[24m[39m[0m[39m [24m[1m[31mc[1m[31ml[0m[39m[1m[31mc[1m[31ml[1m[31me[0m[39m[1m[31me[1m[31ma[0m[39m[0m[32mc[0m[32ml[0m[32me[0m[32ma[32mr[39m[?1l>[0m[23m[24m[J[35m❯[39m [32mclear[39m[K
+]0;_layouts: clear[H[J                                                                                            ]0;~/Projects/askesian.github.com/app/_layouts
+[34m~/Projects/askesian.github.com/app/_layouts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[60C[36m[39m8[32m.[39m[39m[4m.[4m.[24m[?1l>[0m[23m[24m[J[35m❯[39m [4m..[24m[K
+]0;_layouts: ..                                                                                            ]0;~/Projects/askesian.github.com/app
+[34m~/Projects/askesian.github.com/app[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[51C[36m[39m8[32m.[39m[39m[4m.[4m.[24m[?1l>[0m[23m[24m[J[35m❯[39m [4m..[24m[K
+]0;app: ..                                                                                            ]0;~/Projects/askesian.github.com
+[34m~/Projects/askesian.github.com[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[47C[36m[39m8[4mn[24m[4m[33mn[4m[33mp[24m[39m[4m[33mn[4m[33mp[4m[33mo[24m[39m[24m[1m[31mn[24m[1m[31mp[24m[1m[31mo[1m[31mm[0m[39m [4mr[24m[4m[33mr[4m[33mu[24m[39m[24m[39mr[24m[39mun[4m[33mr[4m[33mu[24m[39m [39m[4mr[24m[24m[39m [24m [0m[4m[33mn[0m[4m[33mp[0m[4m[33mo[24m[39m[0m[39m [4m[33mn[4m[33mp[24m[39m[24m[39m [24m[32mn[24m[32mp[32mm[39m [4mr[24m[4m[33mr[4m[33mu[24m[39m[24m[39mr[24m[39mun [4m[33md[24m[39m[4m[33md[4m[33me[24m[39m[24m[39md[24m[39meploy[?1l>[0m[23m[24m[J[35m❯[39m [32mnpm[39m run deploy[K
+]0;askesian.github.com: npm run deploy
+> askesian.github.com@1.0.0 deploy /Users/askesian/Projects/askesian.github.com
+> npm run gulp deploy
+
+
+> askesian.github.com@1.0.0 gulp /Users/askesian/Projects/askesian.github.com
+> node_modules/gulp/bin/gulp.js "deploy"
+
+{ browserSync: 
+   { development: { server: [Object], port: 9999, files: [Object] },
+     production: { server: [Object], port: 9998 } },
+  delete: { src: [ 'build/assets' ] },
+  jekyll: 
+   { development: { src: 'app', dest: 'build/development', config: '_config.yml' },
+     production: 
+      { src: 'app',
+        dest: 'build/production',
+        config: '_config.yml,_config.build.yml' } },
+  sass: 
+   { src: 'app/_assets/styles/**/*.{sass,scss}',
+     dest: 'build/assets/css',
+     options: {} },
+  script: 
+   { src: 'app/_assets/scripts/**/*.js',
+     dest: 'build/assets/js',
+     options: {} },
+  autoprefixer: 
+   { browsers: 
+      [ 'last 2 version',
+        'safari 5',
+        'ie 8',
+        'ie 9',
+        'opera 12.1',
+        'ios 6',
+        'android 4' ],
+     cascade: true },
+  base64: 
+   { src: 'build/assets/css/*.css',
+     dest: 'build/assets/css',
+     options: 
+      { baseDir: 'build',
+        extensions: [Object],
+        maxImageSize: 20480,
+        debug: false } },
+  watch: 
+   { jekyll: 
+      [ '_config.yml',
+        '_config.build.yml',
+        'app/_data/**/*.{json,yml,csv}',
+        'app/_includes/**/*.{html,xml}',
+        'app/_layouts/*.html',
+        'app/_plugins/*.rb',
+        'app/_posts/*.{markdown,md}',
+        'app/**/*.{html,markdown,md,yml,json,txt,xml}',
+        'app/*' ],
+     sass: 'app/_assets/styles/**/*.{sass,scss}',
+     scripts: 'app/_assets/scripts/**/*.js',
+     images: 'app/_assets/images/**/*',
+     svg: 'app/_assets/vectors/*.svg' },
+  optimize: 
+   { html: 
+      { src: 'build/production/**/*.html',
+        dest: 'build/production',
+        options: [Object] },
+     styles: 
+      { src: 'build/assets/css/*.css',
+        dest: 'build/production/assets/css/',
+        options: {} },
+     scripts: 
+      { src: 'build/assets/js/*.js',
+        dest: 'build/production/assets/js',
+        options: {} },
+     images: 
+      { src: 'build/assets/images/**/*.{jpg,jpeg,png,gif}',
+        dest: 'build/production/assets/images/',
+        options: [Object] } },
+  deploy: { branch: 'master', push: false } }
+[[90m19:57:36[39m] Using gulpfile [35m~/Projects/askesian.github.com/gulpfile.js[39m
+[[90m19:57:36[39m] Starting '[36mbuild:production[39m'...
+[[90m19:57:36[39m] Starting '[36mdelete[39m'...
+[[90m19:57:36[39m] Finished '[36mdelete[39m' after [35m9.82 ms[39m
+[[90m19:57:36[39m] Starting '[36mjekyll:production[39m'...
+[[90m19:57:37[39m] Finished '[36mjekyll:production[39m' after [35m1.12 s[39m
+[[90m19:57:37[39m] Starting '[36mstyles[39m'...
+[[90m19:57:38[39m] Starting '[36mscripts[39m'...
+[[90m19:57:38[39m] '[36mscripts[39m' [31merrored after[39m [35m79 μs[39m
+[[90m19:57:38[39m] TypeError: Cannot read property 'src' of undefined
+    at Gulp.<anonymous> (/Users/askesian/Projects/askesian.github.com/gulpfile.js:75:33)
+    at module.exports (/Users/askesian/Projects/askesian.github.com/node_modules/gulp/node_modules/orchestrator/lib/runTask.js:34:7)
+    at Gulp.Orchestrator._runTask (/Users/askesian/Projects/askesian.github.com/node_modules/gulp/node_modules/orchestrator/index.js:273:3)
+    at Gulp.Orchestrator._runStep (/Users/askesian/Projects/askesian.github.com/node_modules/gulp/node_modules/orchestrator/index.js:214:10)
+    at Gulp.Orchestrator.start (/Users/askesian/Projects/askesian.github.com/node_modules/gulp/node_modules/orchestrator/index.js:134:8)
+    at /Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/index.js:63:12
+    at tryRun (/Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/node_modules/thunks/thunks.js:66:22)
+    at runThunk (/Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/node_modules/thunks/thunks.js:87:11)
+    at next (/Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/node_modules/thunks/thunks.js:156:33)
+    at Gulp.successListener (/Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/index.js:42:11)
+[[90m19:57:38[39m] '[36mbuild:production[39m' [31merrored after[39m [35m2.08 s[39m
+[[90m19:57:38[39m] TypeError: Cannot read property 'src' of undefined
+    at Gulp.<anonymous> (/Users/askesian/Projects/askesian.github.com/gulpfile.js:75:33)
+    at module.exports (/Users/askesian/Projects/askesian.github.com/node_modules/gulp/node_modules/orchestrator/lib/runTask.js:34:7)
+    at Gulp.Orchestrator._runTask (/Users/askesian/Projects/askesian.github.com/node_modules/gulp/node_modules/orchestrator/index.js:273:3)
+    at Gulp.Orchestrator._runStep (/Users/askesian/Projects/askesian.github.com/node_modules/gulp/node_modules/orchestrator/index.js:214:10)
+    at Gulp.Orchestrator.start (/Users/askesian/Projects/askesian.github.com/node_modules/gulp/node_modules/orchestrator/index.js:134:8)
+    at /Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/index.js:63:12
+    at tryRun (/Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/node_modules/thunks/thunks.js:66:22)
+    at runThunk (/Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/node_modules/thunks/thunks.js:87:11)
+    at next (/Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/node_modules/thunks/thunks.js:156:33)
+    at Gulp.successListener (/Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/index.js:42:11)
+[[90m19:57:38[39m] Finished '[36mstyles[39m' after [35m950 ms[39m
+
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Darwin 14.3.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "node" "/usr/local/bin/npm" "run" "gulp" "deploy"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v0.12.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v2.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m askesian.github.com@1.0.0 gulp: `node_modules/gulp/bin/gulp.js "deploy"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the askesian.github.com@1.0.0 gulp script 'node_modules/gulp/bin/gulp.js "deploy"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m This is most likely a problem with the askesian.github.com package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/gulp/bin/gulp.js "deploy"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls askesian.github.com
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /Users/askesian/Projects/askesian.github.com/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Darwin 14.3.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "node" "/usr/local/bin/npm" "run" "deploy"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v0.12.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v2.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m askesian.github.com@1.0.0 deploy: `npm run gulp deploy`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the askesian.github.com@1.0.0 deploy script 'npm run gulp deploy'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m This is most likely a problem with the askesian.github.com package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm run gulp deploy
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls askesian.github.com
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /Users/askesian/Projects/askesian.github.com/npm-debug.log
+[0m                                                                                            ]0;~/Projects/askesian.github.com
+[34m~/Projects/askesian.github.com[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[31m❯[39m [K[?1h=[0m[23m[24m[J[31m❯[39m [K7[A[1G[47C[36m[39m8[4mc[24m[4m[33mc[4m[33ml[24m[39m[24m[1m[31mc[24m[1m[31ml[1m[31me[0m[39m[1m[31me[1m[31ma[0m[39m[0m[32mc[0m[32ml[0m[32me[0m[32ma[32mr[39m[?1l>[0m[23m[24m[J[31m❯[39m [32mclear[39m[K
+]0;askesian.github.com: clear[H[J                                                                                            ]0;~/Projects/askesian.github.com
+[34m~/Projects/askesian.github.com[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K[4mn[24m7[A[1G[47C[36m[39m8[4mn[4mp[24m[24m[32mn[24m[32mp[32mm[39m [4mr[24m[4m[33mr[4m[33mu[24m[39m[24m[39mr[24m[39mun [4m[33md[24m[39m[4m[33md[4m[33me[24m[39m[24m[39md[24m[39meploiy  y[?1l>[0m[23m[24m[J[35m❯[39m [32mnpm[39m run deploy[K
+]0;askesian.github.com: npm run deploy
+> askesian.github.com@1.0.0 deploy /Users/askesian/Projects/askesian.github.com
+> npm run gulp deploy
+
+
+> askesian.github.com@1.0.0 gulp /Users/askesian/Projects/askesian.github.com
+> node_modules/gulp/bin/gulp.js "deploy"
+
+{ browserSync: 
+   { development: { server: [Object], port: 9999, files: [Object] },
+     production: { server: [Object], port: 9998 } },
+  delete: { src: [ 'build/assets' ] },
+  jekyll: 
+   { development: { src: 'app', dest: 'build/development', config: '_config.yml' },
+     production: 
+      { src: 'app',
+        dest: 'build/production',
+        config: '_config.yml,_config.build.yml' } },
+  sass: 
+   { src: 'app/_assets/styles/**/*.{sass,scss}',
+     dest: 'build/assets/css',
+     options: {} },
+  scripts: 
+   { src: 'app/_assets/scripts/**/*.js',
+     dest: 'build/assets/js',
+     options: {} },
+  autoprefixer: 
+   { browsers: 
+      [ 'last 2 version',
+        'safari 5',
+        'ie 8',
+        'ie 9',
+        'opera 12.1',
+        'ios 6',
+        'android 4' ],
+     cascade: true },
+  base64: 
+   { src: 'build/assets/css/*.css',
+     dest: 'build/assets/css',
+     options: 
+      { baseDir: 'build',
+        extensions: [Object],
+        maxImageSize: 20480,
+        debug: false } },
+  watch: 
+   { jekyll: 
+      [ '_config.yml',
+        '_config.build.yml',
+        'app/_data/**/*.{json,yml,csv}',
+        'app/_includes/**/*.{html,xml}',
+        'app/_layouts/*.html',
+        'app/_plugins/*.rb',
+        'app/_posts/*.{markdown,md}',
+        'app/**/*.{html,markdown,md,yml,json,txt,xml}',
+        'app/*' ],
+     sass: 'app/_assets/styles/**/*.{sass,scss}',
+     scripts: 'app/_assets/scripts/**/*.js',
+     images: 'app/_assets/images/**/*',
+     svg: 'app/_assets/vectors/*.svg' },
+  optimize: 
+   { html: 
+      { src: 'build/production/**/*.html',
+        dest: 'build/production',
+        options: [Object] },
+     styles: 
+      { src: 'build/assets/css/*.css',
+        dest: 'build/production/assets/css/',
+        options: {} },
+     scripts: 
+      { src: 'build/assets/js/*.js',
+        dest: 'build/production/assets/js',
+        options: {} },
+     images: 
+      { src: 'build/assets/images/**/*.{jpg,jpeg,png,gif}',
+        dest: 'build/production/assets/images/',
+        options: [Object] } },
+  deploy: { branch: 'master', push: false } }
+[[90m19:58:03[39m] Using gulpfile [35m~/Projects/askesian.github.com/gulpfile.js[39m
+[[90m19:58:03[39m] Starting '[36mbuild:production[39m'...
+[[90m19:58:03[39m] Starting '[36mdelete[39m'...
+[[90m19:58:03[39m] Finished '[36mdelete[39m' after [35m15 ms[39m
+[[90m19:58:03[39m] Starting '[36mjekyll:production[39m'...
+[[90m19:58:04[39m] Finished '[36mjekyll:production[39m' after [35m839 ms[39m
+[[90m19:58:04[39m] Starting '[36mstyles[39m'...
+[[90m19:58:05[39m] Starting '[36mscripts[39m'...
+[[90m19:58:05[39m] Starting '[36mimages[39m'...
+[[90m19:58:05[39m] Finished '[36mimages[39m' after [35m28 μs[39m
+[[90m19:58:05[39m] Finished '[36mscripts[39m' after [35m460 ms[39m
+[[90m19:58:05[39m] Finished '[36mstyles[39m' after [35m976 ms[39m
+[[90m19:58:05[39m] Starting '[36mstyles[39m'...
+[[90m19:58:05[39m] Finished '[36mstyles[39m' after [35m88 ms[39m
+[[90m19:58:05[39m] Starting '[36mbase64[39m'...
+[[90m19:58:06[39m] Finished '[36mbase64[39m' after [35m202 ms[39m
+[[90m19:58:06[39m] Starting '[36moptimize:styles[39m'...
+[[90m19:58:06[39m] Starting '[36moptimize:scripts[39m'...
+[[90m19:58:06[39m] Starting '[36moptimize:images[39m'...
+[[90m19:58:08[39m] Starting '[36moptimize:html[39m'...
+[[90m19:58:08[39m] gulp-imagemin: Minified 0 images
+[[90m19:58:08[39m] [32mall files[39m [35m0 B[39m
+[[90m19:58:08[39m] Finished '[36moptimize:images[39m' after [35m2.07 s[39m
+[[90m19:58:08[39m] [32mall files[39m [35m100 B[39m
+[[90m19:58:08[39m] Finished '[36moptimize:styles[39m' after [35m2.76 s[39m
+[[90m19:58:08[39m] [32mall files[39m [35m122 B[39m
+[[90m19:58:08[39m] Finished '[36moptimize:scripts[39m' after [35m2.49 s[39m
+[[90m19:58:08[39m] Finished '[36moptimize:html[39m' after [35m222 ms[39m
+[[90m19:58:08[39m] Finished '[36mbuild:production[39m' after [35m4.99 s[39m
+[[90m19:58:08[39m] Starting '[36msync:production[39m'...
+[[90m19:58:08[39m] Finished '[36msync:production[39m' after [35m119 ms[39m
+[[90m19:58:08[39m] Starting '[36mdeploy[39m'...
+[[34mBS[39m] [1mAccess URLs:[22m
+[90m ----------------------------------[39m
+       Local: [35mhttp://localhost:9998[39m
+    External: [35mhttp://10.0.1.80:9998[39m
+[90m ----------------------------------[39m
+          UI: [35mhttp://localhost:3001[39m
+ UI External: [35mhttp://10.0.1.80:3001[39m
+[90m ----------------------------------[39m
+[[34mBS[39m] Serving files from: [35mbuild/production[39m
+[[90m19:58:09[39m] [gh-pages (master)] Cloning repo
+[[90m19:58:09[39m] [gh-pages (master)] Checkout branch `master`
+[[90m19:58:09[39m] [gh-pages (master)] Updating repository
+[[90m19:58:10[39m] [gh-pages (master)] Copying files to repository
+[[90m19:58:10[39m] [gh-pages (master)] Adding 3 files.
+[[90m19:58:10[39m] [gh-pages (master)] Committing "Update 2015-05-25T00:58:09.296Z"
+[[90m19:58:11[39m] Finished '[36mdeploy[39m' after [35m2.1 s[39m
+^C
+                                                                                            ]0;~/Projects/askesian.github.com
+[34m~/Projects/askesian.github.com[38;5;242m development* [39m [33m1m 13s[39m
+[0m[23m[24m[J[31m❯[39m [K[?1h=[0m[23m[24m[J[31m❯[39m [K7[A[1G[53C[36m[39m8[4mc[24m[4m[33mc[4m[33ml[24m[39m[24m[1m[31mc[24m[1m[31ml[1m[31me[0m[39m[1m[31me[1m[31ma[0m[39m[0m[32mc[0m[32ml[0m[32me[0m[32ma[32mr[39m[?1l>[0m[23m[24m[J[31m❯[39m [32mclear[39m[K
+]0;askesian.github.com: clear[H[J                                                                                            ]0;~/Projects/askesian.github.com
+[34m~/Projects/askesian.github.com[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[47C[36m[39m8[32ml[39m[32ml[32ma[39m[?1l>[0m[23m[24m[J[35m❯[39m [32mla[39m[K
+]0;askesian.github.com: ls -G -lh -Atotal 160
+-rw-r--r--@  1 askesian  staff   8.0K May 24 15:39 .DS_Store
+drwxr-xr-x  15 askesian  staff   510B May 24 19:59 [34m.git[39;49m[0m
+-rw-r--r--   1 askesian  staff    77B May 24 19:14 .gitignore
+drwxr-xr-x   6 askesian  staff   204B May 24 19:58 [34m.publish[39;49m[0m
+-rw-r--r--   1 askesian  staff    13B May 24 14:16 CNAME
+-rw-r--r--   1 askesian  staff    55B May 24 14:35 Gemfile
+-rw-r--r--   1 askesian  staff   1.6K May 24 14:35 Gemfile.lock
+-rw-r--r--   1 askesian  staff     0B May 24 14:16 README
+-rw-r--r--   1 askesian  staff    57B May 24 18:52 _config.build.yml
+-rw-r--r--   1 askesian  staff   539B May 24 18:53 _config.yml
+drwxr-xr-x   8 askesian  staff   272B May 24 16:30 [34mapp[39;49m[0m
+-rw-r--r--   1 askesian  staff   384B May 24 00:20 askesian-web.sublime-project
+-rw-r--r--   1 askesian  staff    18K May 24 00:20 askesian-web.sublime-workspace
+drwxr-xr-x   5 askesian  staff   170B May 24 19:58 [34mbuild[39;49m[0m
+-rw-r--r--   1 askesian  staff   2.7K May 24 19:57 config.js
+-rw-r--r--   1 askesian  staff   5.0K May 24 19:52 gulpfile.js
+drwxr-xr-x  25 askesian  staff   850B May 24 19:46 [34mnode_modules[39;49m[0m
+-rw-r--r--   1 askesian  staff   1.7K May 24 19:57 npm-debug.log
+-rw-r--r--   1 askesian  staff   1.3K May 24 19:46 package.json
+                                                                                            ]0;~/Projects/askesian.github.com
+[34m~/Projects/askesian.github.com[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[47C[36m[39m8[32mg[39m[4m[33mg[4m[33mi[24m[39m[24m[32mg[24m[32mi[32mt[39m [4m[33ms[24m[39m[24m[39mstatus[?1l>[0m[23m[24m[J[35m❯[39m [32mgit[39m status[K
+]0;askesian.github.com: hub statusOn branch development
+Your branch is up-to-date with 'origin/development'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[1;33mmodified:   .gitignore[m
+	[1;33mmodified:   _config.build.yml[m
+	[1;33mmodified:   _config.yml[m
+	[1;33mmodified:   app/_includes/header.html[m
+	[1;33mmodified:   app/_layouts/default.html[m
+	[1;33mmodified:   config.js[m
+	[1;33mmodified:   gulpfile.js[m
+	[1;33mmodified:   package.json[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.publish/[m
+	[31mapp/_assets/scripts/[m
+	[31mapp/_assets/typescript[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+                                                                                            ]0;~/Projects/askesian.github.com
+[34m~/Projects/askesian.github.com[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[47C[36m[39m8[4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31mb[0m[39m[0m[32ms[0m[32mu[0m[32mb[32ml[39m [4m.[24m[4m.[4mg[24m[4mg[4mi[24m[4mi[4mt[24m[4mt[4mi[24m[4mi[4mg[24m[4mg[4mn[24m[4mn[4mo[24m[4mo[4mr[24m[4mr[4me[24m[?1l>[0m[23m[24m[J[35m❯[39m [32msubl[39m [4m.gitignore[24m[K
+]0;askesian.github.com: subl .gitignore                                                                                            ]0;~/Projects/askesian.github.com
+[34m~/Projects/askesian.github.com[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[47C[36m[39m8                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               24m[J[35m❯[39m [32mla[39m[K
+]0;_assets: ls -G -lh -Atotal 184
+-rw-r--r--@ 1 askesian  staff   8.0K May 24 15:36 .DS_Store
+-rw-r--r--  1 askesian  staff   5.4K May 24 14:16 favicon.ico
+drwxr-xr-x  2 askesian  staff    68B May 24 15:35 [34mimages[39;49m[0m
+drwxr-xr-x  3 askesian  staff   102B May 24 19:39 [34mscripts[39;49m[0m
+drwxr-xr-x  5 askesian  staff   170B May 24 16:18 [34mstyles[39;49m[0m
+-rw-r--r--  1 askesian  staff    69K May 24 19:53 typescript
+drwxr-xr-x  2 askesian  staff    68B May 24 15:36 [34mvectors[39;49m[0m
+                                                                                            ]0;~/Projects/askesian.github.com/app/_assets
+[34m~/Projects/askesian.github.com/app/_assets[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[59C[36m[39m8[4ms[24m[4ms[4mc[24m[4ms[4mc[4mr[24m[4mr[4mi[24m[4mi[4mp[24m[24m[32ms[24m[32mc[24m[32mr[24m[32mi[24m[32mp[32mt[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[33m[39m[0m[23m[24m[J[35m❯[39m [32mscript[39m[K[33m[39m[33m[39m
+ [33m-- external command --[39m
+[0mscript
+ [33m-- local directory --[39m
+[J[34mscripts[0m/[J[4A[0m[23m[24m[39m[2C[32mscript[39m[K[39m[?1l>[0m[23m[24m[J[35m❯[39m [32mscript[39m[K
+]0;_assets: scriptScript started, output file is typescript
+^C^C                                                                                            ]0;~/Projects/askesian.github.com/app/_assets
+[34m~/Projects/askesian.github.com/app/_assets[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[59C[36m[39m8[4ms[24m[4ms[4mc[24m[4ms[4mc[4mr[24m[4mr[4mi[24m[4mi[4mp[24m[24m[32ms[24m[32mc[24m[32mr[24m[32mi[24m[32mp[32mt[39m[39m[4ms[39m[4mc[39m[4mr[39m[4mi[39m[4mp[39m[4mt[4ms[24m[?1l>[0m[23m[24m[J[35m❯[39m [4mscripts[24m[K
+]0;_assets: scripts                                                                                            ]0;~/Projects/askesian.github.com/app/_assets/scripts
+[34m~/Projects/askesian.github.com/app/_assets/scripts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[67C[36m[39m8[32ml[39m[32ml[32ma[39m[?1l>[0m[23m[24m[J[35m❯[39m [32mla[39m[K
+]0;scripts: ls -G -lh -Atotal 8
+-rw-r--r--  1 askesian  staff   198B May 24 19:40 main.js
+                                                                                            ]0;~/Projects/askesian.github.com/app/_assets/scripts
+[34m~/Projects/askesian.github.com/app/_assets/scripts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[67C[36m[39m8[4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31mb[0m[39m[0m[32ms[0m[32mu[0m[32mb[32ml[39m [4mm[24m[4mm[4ma[24m[4ma[4mi[24m[4mi[4mn[24m[4mn[4m.[24m[4m.[4mj[24m[4mj[4ms[24m[?1l>[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mmain.js[24m[K
+]0;scripts: subl main.js                                                                                            ]0;~/Projects/askesian.github.com/app/_assets/scripts
+[34m~/Projects/askesian.github.com/app/_assets/scripts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[67C[36m[39m8[32m.[39m[39m[4m.[4m.[24m[?1l>[0m[23m[24m[J[35m❯[39m [4m..[24m[K
+]0;scripts: ..                                                                                            ]0;~/Projects/askesian.github.com/app/_assets
+[34m~/Projects/askesian.github.com/app/_assets[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[59C[36m[39m8[32m.[39m[39m[4m.[4m.[24m[?1l>[0m[23m[24m[J[35m❯[39m [4m..[24m[K
+]0;_assets: ..                                                                                            ]0;~/Projects/askesian.github.com/app
+[34m~/Projects/askesian.github.com/app[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[51C[36m[39m8[32ml[39m[32ml[32ma[39m[?1l>[0m[23m[24m[J[35m❯[39m [32mla[39m[K
+]0;app: ls -G -lh -Atotal 32
+-rw-r--r--@ 1 askesian  staff    10K May 24 15:38 .DS_Store
+drwxr-xr-x  9 askesian  staff   306B May 24 19:38 [34m_assets[39;49m[0m
+drwxr-xr-x  4 askesian  staff   136B May 24 14:16 [34m_includes[39;49m[0m
+drwxr-xr-x  4 askesian  staff   136B May 24 14:16 [34m_layouts[39;49m[0m
+drwxr-xr-x  3 askesian  staff   102B May 24 14:16 [34m_posts[39;49m[0m
+-rw-r--r--  1 askesian  staff   505B May 24 16:30 index.html
+                                                                                            ]0;~/Projects/askesian.github.com/app
+[34m~/Projects/askesian.github.com/app[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[51C[36m[39m8[4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31mb[0m[39m[0m[32ms[0m[32mu[0m[32mb[32ml[39m [4mi[24m[4mi[4mn[24m[4mn[4md[24m[4md[4me[24m[4me[4mx[24m[4mx[4m.[24m[4m.[4mh[24m[4mh[4mt[24m[4mt[4mm[24m[4mm[4ml[24m[?1l>[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mindex.html[24m[K
+]0;app: subl index.html                                                                                            ]0;~/Projects/askesian.github.com/app
+[34m~/Projects/askesian.github.com/app[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[51C[36m[39m8[32ml[39m[32ml[32ma[39m[?1l>[0m[23m[24m[J[35m❯[39m [32mla[39m[K
+]0;app: ls -G -lh -Atotal 32
+-rw-r--r--@ 1 askesian  staff    10K May 24 15:38 .DS_Store
+drwxr-xr-x  9 askesian  staff   306B May 24 19:38 [34m_assets[39;49m[0m
+drwxr-xr-x  4 askesian  staff   136B May 24 14:16 [34m_includes[39;49m[0m
+drwxr-xr-x  4 askesian  staff   136B May 24 14:16 [34m_layouts[39;49m[0m
+drwxr-xr-x  3 askesian  staff   102B May 24 14:16 [34m_posts[39;49m[0m
+-rw-r--r--  1 askesian  staff   505B May 24 16:30 index.html
+                                                                                            ]0;~/Projects/askesian.github.com/app
+[34m~/Projects/askesian.github.com/app[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[51C[36m[39m8[32m_[39m[39m[4m_[4mi[24m[4m_[4mi[4mn[24m[4mn[4mc[24m[4mc[4ml[24m[33m[39m[0m[23m[24m[J[35m❯[39m [4m_includes[1m[4m/[0m[24m[K[4ms[24m[0m[24m [?1l>[0m[23m[24m[J[35m❯[39m [4m_includes[24m[K
+]0;app: _includes                                                                                            ]0;~/Projects/askesian.github.com/app/_includes
+[34m~/Projects/askesian.github.com/app/_includes[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[61C[36m[39m8[32ml[39m[32ml[32ma[39m[?1l>[0m[23m[24m[J[35m❯[39m [32mla[39m[K
+]0;_includes: ls -G -lh -Atotal 16
+-rw-r--r--  1 askesian  staff   223B May 24 14:16 footer.html
+-rw-r--r--  1 askesian  staff   224B May 24 14:16 header.html
+                                                                                            ]0;~/Projects/askesian.github.com/app/_includes
+[34m~/Projects/askesian.github.com/app/_includes[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[61C[36m[39m8[4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31ml[0m[39m[1m[31ml[1m[31mb[0m[39m [4mh[24m[4mh[4me[24m[4mh[24m[24m [24m [1m[31ml[0m[39m[0m[39m [0m[32ms[0m[32mu[39m[0m[39m [1m[31ms[1m[31mu[1m[31mb[0m[39m[0m[32ms[0m[32mu[0m[32mb[32ml[39m [4mh[24m[4mh[4me[24m[4me[4ma[24m[4ma[4md[24m[4md[4me[24m[4me[4mr[24m[4mr[4m.[24m[4m.[4mh[24m[8D[4m[33mh[4m[33me[4m[33ma[4m[33md[4m[33me[4m[33mr[4m[33m.[4m[33mh[4m[33mm[24m[39m[4m[33mm[4m[33mt[24m[39m[4m[33mt[4m[33ml[24m[39m[4m[33mt[24m[39m[24m[39m [4m[33mm[24m[39m[24m[39m [9D[39m[4mh[39m[4me[39m[4ma[39m[4md[39m[4me[39m[4mr[39m[4m.[39m[4mh[24m[24m[39m [4mh[4mt[24m[4mt[4mm[24m[4mm[4ml[24m[?1l>[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mheader.html[24m[K
+]0;_includes: subl header.html                                                                                            ]0;~/Projects/askesian.github.com/app/_includes
+[34m~/Projects/askesian.github.com/app/_includes[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[61C[36m[39m8[32m.[39m[?1l>[0m[23m[24m[J[35m❯[39m [32m.[39m[K
+]0;_includes: ..: not enough arguments
+                                                                                            ]0;~/Projects/askesian.github.com/app/_includes
+[34m~/Projects/askesian.github.com/app/_includes[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[31m❯[39m [K[?1h=[0m[23m[24m[J[31m❯[39m [K7[A[1G[61C[36m[39m8[32m.[39m[39m[4m.[4m.[24m[?1l>[0m[23m[24m[J[31m❯[39m [4m..[24m[K
+]0;_includes: ..                                                                                            ]0;~/Projects/askesian.github.com/app
+[34m~/Projects/askesian.github.com/app[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K[32m_[39m[39m[4m_[4ml[24m7[A[1G[51C[36m[39m8[4m_[4ml[4ma[24m[4ma[4my[24m[4my[4mo[24m[4mo[4mu[24m[33m[39m[0m[23m[24m[J[35m❯[39m [4m_layouts[1m[4m/[0m[24m[K[4ms[24m[0m[24m [?1l>[0m[23m[24m[J[35m❯[39m [4m_layouts[24m[K
+]0;app: _layouts                                                                                            ]0;~/Projects/askesian.github.com/app/_layouts
+[34m~/Projects/askesian.github.com/app/_layouts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[60C[36m[39m8[32ml[39m[32ml[32ma[39m[?1l>[0m[23m[24m[J[35m❯[39m [32mla[39m[K
+]0;_layouts: ls -G -lh -Atotal 16
+-rw-r--r--  1 askesian  staff   1.6K May 24 14:16 default.html
+-rw-r--r--  1 askesian  staff   769B May 24 14:16 post.html
+                                                                                            ]0;~/Projects/askesian.github.com/app/_layouts
+[34m~/Projects/askesian.github.com/app/_layouts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[60C[36m[39m8[4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31mb[0m[39m[0m[32ms[0m[32mu[0m[32mb[32ml[39m [4md[24m[4md[4me[24m[4me[4mf[24m[4mf[4ma[24m[4ma[4mu[24m[4mu[4ml[24m[4ml[4mt[24m[4mt[4m.[24m[33m[39m[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mdefault.html[24m[1m [0m[K[0m [?1l>[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mdefault.html[24m[K
+]0;_layouts: subl default.html                                                                                            ]0;~/Projects/askesian.github.com/app/_layouts
+[34m~/Projects/askesian.github.com/app/_layouts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[60C[36m[39m8[32m.[39m[39m[4m.[4m.[24m[?1l>[0m[23m[24m[J[35m❯[39m [4m..[24m[K
+]0;_layouts: ..                                                                                            ]0;~/Projects/askesian.github.com/app
+[34m~/Projects/askesian.github.com/app[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[51C[36m[39m8[32m_[39m[39m[4m_[4mi[24m[4m_[4mi[4mn[24m[4mn[4mc[24m[4mc[4ml[24m[4m[33m_[4m[33mi[4m[33mn[4m[33mc[4m[33ml[4m[33mj[24m[39m[32m[39m[0m[23m[24m[J[35m❯[39m [4m_includes[1m[4m/[0m[24m[K[4ms[24m[0m[24m [?1l>[0m[23m[24m[J[35m❯[39m [4m_includes[24m[K
+]0;app: _includes                                                                                            ]0;~/Projects/askesian.github.com/app/_includes
+[34m~/Projects/askesian.github.com/app/_includes[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[61C[36m[39m8[4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31ml[0m[39m[1m[31ml[1m[31mb[0m[39m [4mf[24m[4mf[4mo[24m[4mo[4mo[24m[4mo[4mt[24m[33m[39m[0m[23m[24m[J[35m❯[39m [1m[31msulb[0m[39m [4mfooter.html[24m[1m [0m[K[0m [4mm[24m[24m [4mt[24m[24m [4mh[24m[24m [4m.[24m[24m [4mr[24m[24m [4me[24m[24m [4mt[24m[24m [4mo[24m[24m [4mo[24m[24m [4mf[24m[24m [24m [1m[31ml[0m[39m[0m[39m [0m[32ms[0m[32mu[39m[0m[39m [4m[33ms[24m[39m[39m [24m[39m [4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31mb[0m[39m[0m[32ms[0m[32mu[0m[32mb[32ml[39m [4mf[24m[4mf[4mo[24m[4mo[4mo[24m[4mo[4mt[24m[4mt[4me[24m[4me[4mr[24m[33m[39m[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mfooter.html[24m[1m [0m[K[0m [?1l>[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mfooter.html[24m[K
+]0;_includes: subl footer.html                                                                                            ]0;~/Projects/askesian.github.com/app/_includes
+[34m~/Projects/askesian.github.com/app/_includes[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[61C[36m[39m8[32m.[39m[39m[4m.[4m.[24m[?1l>[0m[23m[24m[J[35m❯[39m [4m..[24m[K
+]0;_includes: ..                                                                                            ]0;~/Projects/askesian.github.com/app
+[34m~/Projects/askesian.github.com/app[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[51C[36m[39m8[4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31mb[0m[39m[0m[32ms[0m[32mu[0m[32mb[32ml[39m[1m[31ms[1m[31mu[1m[31mb[0m[39m[39m [0m[32ms[0m[32mu[39m[0m[39m [4m[33ms[24m[39m[39m [24m[39m [32m_[39m[39m[4m_[4ml[24m[4m_[4ml[4ma[24m[4ma[4my[24m[4my[4mo[24m[4mo[4mu[24m[33m[39m[0m[23m[24m[J[35m❯[39m [4m_layouts[1m[4m/[0m[24m[K[4ms[24m[0m[24m [?1l>[0m[23m[24m[J[35m❯[39m [4m_layouts[24m[K
+]0;app: _layouts                                                                                            ]0;~/Projects/askesian.github.com/app/_layouts
+[34m~/Projects/askesian.github.com/app/_layouts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[60C[36m[39m8[4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31ml[0m[39m[1m[31ml[1m[31mb[0m[39m[1m[31ml[0m[39m[0m[39m [0m[32ms[0m[32mu[39m[0m[39m [1m[31ms[1m[31mu[1m[31mb[0m[39m[0m[32ms[0m[32mu[0m[32mb[32ml[39m [4md[24m[4md[4me[24m[4me[4mf[24m[4mf[4ma[24m[33m[39m[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mdefault.html[24m[1m [0m[K[0m [?1l>[0m[23m[24m[J[35m❯[39m [32msubl[39m [4mdefault.html[24m[K
+]0;_layouts: subl default.html                                                                                            ]0;~/Projects/askesian.github.com/app/_layouts
+[34m~/Projects/askesian.github.com/app/_layouts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[60C[36m[39m8[4m[33mc[24m[39m[24m[1m[31mc[1m[31ma[0m[39m[0m[32mc[0m[32ma[32ml[39m[1m[31mc[1m[31ma[0m[39m[39m [0m[4m[33mc[24m[39m[0m[39m [24m[1m[31mc[1m[31ml[0m[39m[1m[31mc[1m[31ml[1m[31me[0m[39m[1m[31me[1m[31ma[0m[39m[0m[32mc[0m[32ml[0m[32me[0m[32ma[32mr[39m[?1l>[0m[23m[24m[J[35m❯[39m [32mclear[39m[K
+]0;_layouts: clear[H[J                                                                                            ]0;~/Projects/askesian.github.com/app/_layouts
+[34m~/Projects/askesian.github.com/app/_layouts[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[60C[36m[39m8[32m.[39m[39m[4m.[4m.[24m[?1l>[0m[23m[24m[J[35m❯[39m [4m..[24m[K
+]0;_layouts: ..                                                                                            ]0;~/Projects/askesian.github.com/app
+[34m~/Projects/askesian.github.com/app[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[51C[36m[39m8[32m.[39m[39m[4m.[4m.[24m[?1l>[0m[23m[24m[J[35m❯[39m [4m..[24m[K
+]0;app: ..                                                                                            ]0;~/Projects/askesian.github.com
+[34m~/Projects/askesian.github.com[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[47C[36m[39m8[4mn[24m[4m[33mn[4m[33mp[24m[39m[4m[33mn[4m[33mp[4m[33mo[24m[39m[24m[1m[31mn[24m[1m[31mp[24m[1m[31mo[1m[31mm[0m[39m [4mr[24m[4m[33mr[4m[33mu[24m[39m[24m[39mr[24m[39mun[4m[33mr[4m[33mu[24m[39m [39m[4mr[24m[24m[39m [24m [0m[4m[33mn[0m[4m[33mp[0m[4m[33mo[24m[39m[0m[39m [4m[33mn[4m[33mp[24m[39m[24m[39m [24m[32mn[24m[32mp[32mm[39m [4mr[24m[4m[33mr[4m[33mu[24m[39m[24m[39mr[24m[39mun [4m[33md[24m[39m[4m[33md[4m[33me[24m[39m[24m[39md[24m[39meploy[?1l>[0m[23m[24m[J[35m❯[39m [32mnpm[39m run deploy[K
+]0;askesian.github.com: npm run deploy
+> askesian.github.com@1.0.0 deploy /Users/askesian/Projects/askesian.github.com
+> npm run gulp deploy
+
+
+> askesian.github.com@1.0.0 gulp /Users/askesian/Projects/askesian.github.com
+> node_modules/gulp/bin/gulp.js "deploy"
+
+{ browserSync: 
+   { development: { server: [Object], port: 9999, files: [Object] },
+     production: { server: [Object], port: 9998 } },
+  delete: { src: [ 'build/assets' ] },
+  jekyll: 
+   { development: { src: 'app', dest: 'build/development', config: '_config.yml' },
+     production: 
+      { src: 'app',
+        dest: 'build/production',
+        config: '_config.yml,_config.build.yml' } },
+  sass: 
+   { src: 'app/_assets/styles/**/*.{sass,scss}',
+     dest: 'build/assets/css',
+     options: {} },
+  script: 
+   { src: 'app/_assets/scripts/**/*.js',
+     dest: 'build/assets/js',
+     options: {} },
+  autoprefixer: 
+   { browsers: 
+      [ 'last 2 version',
+        'safari 5',
+        'ie 8',
+        'ie 9',
+        'opera 12.1',
+        'ios 6',
+        'android 4' ],
+     cascade: true },
+  base64: 
+   { src: 'build/assets/css/*.css',
+     dest: 'build/assets/css',
+     options: 
+      { baseDir: 'build',
+        extensions: [Object],
+        maxImageSize: 20480,
+        debug: false } },
+  watch: 
+   { jekyll: 
+      [ '_config.yml',
+        '_config.build.yml',
+        'app/_data/**/*.{json,yml,csv}',
+        'app/_includes/**/*.{html,xml}',
+        'app/_layouts/*.html',
+        'app/_plugins/*.rb',
+        'app/_posts/*.{markdown,md}',
+        'app/**/*.{html,markdown,md,yml,json,txt,xml}',
+        'app/*' ],
+     sass: 'app/_assets/styles/**/*.{sass,scss}',
+     scripts: 'app/_assets/scripts/**/*.js',
+     images: 'app/_assets/images/**/*',
+     svg: 'app/_assets/vectors/*.svg' },
+  optimize: 
+   { html: 
+      { src: 'build/production/**/*.html',
+        dest: 'build/production',
+        options: [Object] },
+     styles: 
+      { src: 'build/assets/css/*.css',
+        dest: 'build/production/assets/css/',
+        options: {} },
+     scripts: 
+      { src: 'build/assets/js/*.js',
+        dest: 'build/production/assets/js',
+        options: {} },
+     images: 
+      { src: 'build/assets/images/**/*.{jpg,jpeg,png,gif}',
+        dest: 'build/production/assets/images/',
+        options: [Object] } },
+  deploy: { branch: 'master', push: false } }
+[[90m19:57:36[39m] Using gulpfile [35m~/Projects/askesian.github.com/gulpfile.js[39m
+[[90m19:57:36[39m] Starting '[36mbuild:production[39m'...
+[[90m19:57:36[39m] Starting '[36mdelete[39m'...
+[[90m19:57:36[39m] Finished '[36mdelete[39m' after [35m9.82 ms[39m
+[[90m19:57:36[39m] Starting '[36mjekyll:production[39m'...
+[[90m19:57:37[39m] Finished '[36mjekyll:production[39m' after [35m1.12 s[39m
+[[90m19:57:37[39m] Starting '[36mstyles[39m'...
+[[90m19:57:38[39m] Starting '[36mscripts[39m'...
+[[90m19:57:38[39m] '[36mscripts[39m' [31merrored after[39m [35m79 μs[39m
+[[90m19:57:38[39m] TypeError: Cannot read property 'src' of undefined
+    at Gulp.<anonymous> (/Users/askesian/Projects/askesian.github.com/gulpfile.js:75:33)
+    at module.exports (/Users/askesian/Projects/askesian.github.com/node_modules/gulp/node_modules/orchestrator/lib/runTask.js:34:7)
+    at Gulp.Orchestrator._runTask (/Users/askesian/Projects/askesian.github.com/node_modules/gulp/node_modules/orchestrator/index.js:273:3)
+    at Gulp.Orchestrator._runStep (/Users/askesian/Projects/askesian.github.com/node_modules/gulp/node_modules/orchestrator/index.js:214:10)
+    at Gulp.Orchestrator.start (/Users/askesian/Projects/askesian.github.com/node_modules/gulp/node_modules/orchestrator/index.js:134:8)
+    at /Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/index.js:63:12
+    at tryRun (/Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/node_modules/thunks/thunks.js:66:22)
+    at runThunk (/Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/node_modules/thunks/thunks.js:87:11)
+    at next (/Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/node_modules/thunks/thunks.js:156:33)
+    at Gulp.successListener (/Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/index.js:42:11)
+[[90m19:57:38[39m] '[36mbuild:production[39m' [31merrored after[39m [35m2.08 s[39m
+[[90m19:57:38[39m] TypeError: Cannot read property 'src' of undefined
+    at Gulp.<anonymous> (/Users/askesian/Projects/askesian.github.com/gulpfile.js:75:33)
+    at module.exports (/Users/askesian/Projects/askesian.github.com/node_modules/gulp/node_modules/orchestrator/lib/runTask.js:34:7)
+    at Gulp.Orchestrator._runTask (/Users/askesian/Projects/askesian.github.com/node_modules/gulp/node_modules/orchestrator/index.js:273:3)
+    at Gulp.Orchestrator._runStep (/Users/askesian/Projects/askesian.github.com/node_modules/gulp/node_modules/orchestrator/index.js:214:10)
+    at Gulp.Orchestrator.start (/Users/askesian/Projects/askesian.github.com/node_modules/gulp/node_modules/orchestrator/index.js:134:8)
+    at /Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/index.js:63:12
+    at tryRun (/Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/node_modules/thunks/thunks.js:66:22)
+    at runThunk (/Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/node_modules/thunks/thunks.js:87:11)
+    at next (/Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/node_modules/thunks/thunks.js:156:33)
+    at Gulp.successListener (/Users/askesian/Projects/askesian.github.com/node_modules/gulp-sequence/index.js:42:11)
+[[90m19:57:38[39m] Finished '[36mstyles[39m' after [35m950 ms[39m
+
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Darwin 14.3.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "node" "/usr/local/bin/npm" "run" "gulp" "deploy"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v0.12.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v2.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m askesian.github.com@1.0.0 gulp: `node_modules/gulp/bin/gulp.js "deploy"`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the askesian.github.com@1.0.0 gulp script 'node_modules/gulp/bin/gulp.js "deploy"'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m This is most likely a problem with the askesian.github.com package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     node_modules/gulp/bin/gulp.js "deploy"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls askesian.github.com
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /Users/askesian/Projects/askesian.github.com/npm-debug.log
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Darwin 14.3.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35margv[0m "node" "/usr/local/bin/npm" "run" "deploy"
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnode[0m v0.12.2
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mnpm [0m v2.10.0
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m askesian.github.com@1.0.0 deploy: `npm run gulp deploy`
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Exit status 1
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m 
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Failed at the askesian.github.com@1.0.0 deploy script 'npm run gulp deploy'.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m This is most likely a problem with the askesian.github.com package,
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m not with npm itself.
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Tell the author that this fails on your system:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm run gulp deploy
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m You can get their info via:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     npm owner ls askesian.github.com
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m There is likely additional logging output above.
+[0m
+[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m Please include the following file with any support request:
+[0m[37m[40mnpm[0m [0m[31m[40mERR![0m[35m[0m     /Users/askesian/Projects/askesian.github.com/npm-debug.log
+[0m                                                                                            ]0;~/Projects/askesian.github.com
+[34m~/Projects/askesian.github.com[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[31m❯[39m [K[?1h=[0m[23m[24m[J[31m❯[39m [K7[A[1G[47C[36m[39m8[4mc[24m[4m[33mc[4m[33ml[24m[39m[24m[1m[31mc[24m[1m[31ml[1m[31me[0m[39m[1m[31me[1m[31ma[0m[39m[0m[32mc[0m[32ml[0m[32me[0m[32ma[32mr[39m[?1l>[0m[23m[24m[J[31m❯[39m [32mclear[39m[K
+]0;askesian.github.com: clear[H[J                                                                                            ]0;~/Projects/askesian.github.com
+[34m~/Projects/askesian.github.com[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K[4mn[24m7[A[1G[47C[36m[39m8[4mn[4mp[24m[24m[32mn[24m[32mp[32mm[39m [4mr[24m[4m[33mr[4m[33mu[24m[39m[24m[39mr[24m[39mun [4m[33md[24m[39m[4m[33md[4m[33me[24m[39m[24m[39md[24m[39meploiy  y[?1l>[0m[23m[24m[J[35m❯[39m [32mnpm[39m run deploy[K
+]0;askesian.github.com: npm run deploy
+> askesian.github.com@1.0.0 deploy /Users/askesian/Projects/askesian.github.com
+> npm run gulp deploy
+
+
+> askesian.github.com@1.0.0 gulp /Users/askesian/Projects/askesian.github.com
+> node_modules/gulp/bin/gulp.js "deploy"
+
+{ browserSync: 
+   { development: { server: [Object], port: 9999, files: [Object] },
+     production: { server: [Object], port: 9998 } },
+  delete: { src: [ 'build/assets' ] },
+  jekyll: 
+   { development: { src: 'app', dest: 'build/development', config: '_config.yml' },
+     production: 
+      { src: 'app',
+        dest: 'build/production',
+        config: '_config.yml,_config.build.yml' } },
+  sass: 
+   { src: 'app/_assets/styles/**/*.{sass,scss}',
+     dest: 'build/assets/css',
+     options: {} },
+  scripts: 
+   { src: 'app/_assets/scripts/**/*.js',
+     dest: 'build/assets/js',
+     options: {} },
+  autoprefixer: 
+   { browsers: 
+      [ 'last 2 version',
+        'safari 5',
+        'ie 8',
+        'ie 9',
+        'opera 12.1',
+        'ios 6',
+        'android 4' ],
+     cascade: true },
+  base64: 
+   { src: 'build/assets/css/*.css',
+     dest: 'build/assets/css',
+     options: 
+      { baseDir: 'build',
+        extensions: [Object],
+        maxImageSize: 20480,
+        debug: false } },
+  watch: 
+   { jekyll: 
+      [ '_config.yml',
+        '_config.build.yml',
+        'app/_data/**/*.{json,yml,csv}',
+        'app/_includes/**/*.{html,xml}',
+        'app/_layouts/*.html',
+        'app/_plugins/*.rb',
+        'app/_posts/*.{markdown,md}',
+        'app/**/*.{html,markdown,md,yml,json,txt,xml}',
+        'app/*' ],
+     sass: 'app/_assets/styles/**/*.{sass,scss}',
+     scripts: 'app/_assets/scripts/**/*.js',
+     images: 'app/_assets/images/**/*',
+     svg: 'app/_assets/vectors/*.svg' },
+  optimize: 
+   { html: 
+      { src: 'build/production/**/*.html',
+        dest: 'build/production',
+        options: [Object] },
+     styles: 
+      { src: 'build/assets/css/*.css',
+        dest: 'build/production/assets/css/',
+        options: {} },
+     scripts: 
+      { src: 'build/assets/js/*.js',
+        dest: 'build/production/assets/js',
+        options: {} },
+     images: 
+      { src: 'build/assets/images/**/*.{jpg,jpeg,png,gif}',
+        dest: 'build/production/assets/images/',
+        options: [Object] } },
+  deploy: { branch: 'master', push: false } }
+[[90m19:58:03[39m] Using gulpfile [35m~/Projects/askesian.github.com/gulpfile.js[39m
+[[90m19:58:03[39m] Starting '[36mbuild:production[39m'...
+[[90m19:58:03[39m] Starting '[36mdelete[39m'...
+[[90m19:58:03[39m] Finished '[36mdelete[39m' after [35m15 ms[39m
+[[90m19:58:03[39m] Starting '[36mjekyll:production[39m'...
+[[90m19:58:04[39m] Finished '[36mjekyll:production[39m' after [35m839 ms[39m
+[[90m19:58:04[39m] Starting '[36mstyles[39m'...
+[[90m19:58:05[39m] Starting '[36mscripts[39m'...
+[[90m19:58:05[39m] Starting '[36mimages[39m'...
+[[90m19:58:05[39m] Finished '[36mimages[39m' after [35m28 μs[39m
+[[90m19:58:05[39m] Finished '[36mscripts[39m' after [35m460 ms[39m
+[[90m19:58:05[39m] Finished '[36mstyles[39m' after [35m976 ms[39m
+[[90m19:58:05[39m] Starting '[36mstyles[39m'...
+[[90m19:58:05[39m] Finished '[36mstyles[39m' after [35m88 ms[39m
+[[90m19:58:05[39m] Starting '[36mbase64[39m'...
+[[90m19:58:06[39m] Finished '[36mbase64[39m' after [35m202 ms[39m
+[[90m19:58:06[39m] Starting '[36moptimize:styles[39m'...
+[[90m19:58:06[39m] Starting '[36moptimize:scripts[39m'...
+[[90m19:58:06[39m] Starting '[36moptimize:images[39m'...
+[[90m19:58:08[39m] Starting '[36moptimize:html[39m'...
+[[90m19:58:08[39m] gulp-imagemin: Minified 0 images
+[[90m19:58:08[39m] [32mall files[39m [35m0 B[39m
+[[90m19:58:08[39m] Finished '[36moptimize:images[39m' after [35m2.07 s[39m
+[[90m19:58:08[39m] [32mall files[39m [35m100 B[39m
+[[90m19:58:08[39m] Finished '[36moptimize:styles[39m' after [35m2.76 s[39m
+[[90m19:58:08[39m] [32mall files[39m [35m122 B[39m
+[[90m19:58:08[39m] Finished '[36moptimize:scripts[39m' after [35m2.49 s[39m
+[[90m19:58:08[39m] Finished '[36moptimize:html[39m' after [35m222 ms[39m
+[[90m19:58:08[39m] Finished '[36mbuild:production[39m' after [35m4.99 s[39m
+[[90m19:58:08[39m] Starting '[36msync:production[39m'...
+[[90m19:58:08[39m] Finished '[36msync:production[39m' after [35m119 ms[39m
+[[90m19:58:08[39m] Starting '[36mdeploy[39m'...
+[[34mBS[39m] [1mAccess URLs:[22m
+[90m ----------------------------------[39m
+       Local: [35mhttp://localhost:9998[39m
+    External: [35mhttp://10.0.1.80:9998[39m
+[90m ----------------------------------[39m
+          UI: [35mhttp://localhost:3001[39m
+ UI External: [35mhttp://10.0.1.80:3001[39m
+[90m ----------------------------------[39m
+[[34mBS[39m] Serving files from: [35mbuild/production[39m
+[[90m19:58:09[39m] [gh-pages (master)] Cloning repo
+[[90m19:58:09[39m] [gh-pages (master)] Checkout branch `master`
+[[90m19:58:09[39m] [gh-pages (master)] Updating repository
+[[90m19:58:10[39m] [gh-pages (master)] Copying files to repository
+[[90m19:58:10[39m] [gh-pages (master)] Adding 3 files.
+[[90m19:58:10[39m] [gh-pages (master)] Committing "Update 2015-05-25T00:58:09.296Z"
+[[90m19:58:11[39m] Finished '[36mdeploy[39m' after [35m2.1 s[39m
+^C
+                                                                                            ]0;~/Projects/askesian.github.com
+[34m~/Projects/askesian.github.com[38;5;242m development* [39m [33m1m 13s[39m
+[0m[23m[24m[J[31m❯[39m [K[?1h=[0m[23m[24m[J[31m❯[39m [K7[A[1G[53C[36m[39m8[4mc[24m[4m[33mc[4m[33ml[24m[39m[24m[1m[31mc[24m[1m[31ml[1m[31me[0m[39m[1m[31me[1m[31ma[0m[39m[0m[32mc[0m[32ml[0m[32me[0m[32ma[32mr[39m[?1l>[0m[23m[24m[J[31m❯[39m [32mclear[39m[K
+]0;askesian.github.com: clear[H[J                                                                                            ]0;~/Projects/askesian.github.com
+[34m~/Projects/askesian.github.com[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[47C[36m[39m8[32ml[39m[32ml[32ma[39m[?1l>[0m[23m[24m[J[35m❯[39m [32mla[39m[K
+]0;askesian.github.com: ls -G -lh -Atotal 160
+-rw-r--r--@  1 askesian  staff   8.0K May 24 15:39 .DS_Store
+drwxr-xr-x  15 askesian  staff   510B May 24 19:59 [34m.git[39;49m[0m
+-rw-r--r--   1 askesian  staff    77B May 24 19:14 .gitignore
+drwxr-xr-x   6 askesian  staff   204B May 24 19:58 [34m.publish[39;49m[0m
+-rw-r--r--   1 askesian  staff    13B May 24 14:16 CNAME
+-rw-r--r--   1 askesian  staff    55B May 24 14:35 Gemfile
+-rw-r--r--   1 askesian  staff   1.6K May 24 14:35 Gemfile.lock
+-rw-r--r--   1 askesian  staff     0B May 24 14:16 README
+-rw-r--r--   1 askesian  staff    57B May 24 18:52 _config.build.yml
+-rw-r--r--   1 askesian  staff   539B May 24 18:53 _config.yml
+drwxr-xr-x   8 askesian  staff   272B May 24 16:30 [34mapp[39;49m[0m
+-rw-r--r--   1 askesian  staff   384B May 24 00:20 askesian-web.sublime-project
+-rw-r--r--   1 askesian  staff    18K May 24 00:20 askesian-web.sublime-workspace
+drwxr-xr-x   5 askesian  staff   170B May 24 19:58 [34mbuild[39;49m[0m
+-rw-r--r--   1 askesian  staff   2.7K May 24 19:57 config.js
+-rw-r--r--   1 askesian  staff   5.0K May 24 19:52 gulpfile.js
+drwxr-xr-x  25 askesian  staff   850B May 24 19:46 [34mnode_modules[39;49m[0m
+-rw-r--r--   1 askesian  staff   1.7K May 24 19:57 npm-debug.log
+-rw-r--r--   1 askesian  staff   1.3K May 24 19:46 package.json
+                                                                                            ]0;~/Projects/askesian.github.com
+[34m~/Projects/askesian.github.com[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[47C[36m[39m8[32mg[39m[4m[33mg[4m[33mi[24m[39m[24m[32mg[24m[32mi[32mt[39m [4m[33ms[24m[39m[24m[39mstatus[?1l>[0m[23m[24m[J[35m❯[39m [32mgit[39m status[K
+]0;askesian.github.com: hub statusOn branch development
+Your branch is up-to-date with 'origin/development'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[1;33mmodified:   .gitignore[m
+	[1;33mmodified:   _config.build.yml[m
+	[1;33mmodified:   _config.yml[m
+	[1;33mmodified:   app/_includes/header.html[m
+	[1;33mmodified:   app/_layouts/default.html[m
+	[1;33mmodified:   config.js[m
+	[1;33mmodified:   gulpfile.js[m
+	[1;33mmodified:   package.json[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.publish/[m
+	[31mapp/_assets/scripts/[m
+	[31mapp/_assets/typescript[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+                                                                                            ]0;~/Projects/askesian.github.com
+[34m~/Projects/askesian.github.com[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[47C[36m[39m8[4m[33ms[24m[39m[24m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31mb[0m[39m[0m[32ms[0m[32mu[0m[32mb[32ml[39m [4m.[24m[4m.[4mg[24m[4mg[4mi[24m[4mi[4mt[24m[4mt[4mi[24m[4mi[4mg[24m[4mg[4mn[24m[4mn[4mo[24m[4mo[4mr[24m[4mr[4me[24m[?1l>[0m[23m[24m[J[35m❯[39m [32msubl[39m [4m.gitignore[24m[K
+]0;askesian.github.com: subl .gitignore                                                                                            ]0;~/Projects/askesian.github.com
+[34m~/Projects/askesian.github.com[38;5;242m development* [39m [33m[39m
+[0m[23m[24m[J[35m❯[39m [K[?1h=[0m[23m[24m[J[35m❯[39m [K7[A[1G[47C[36m[39m8

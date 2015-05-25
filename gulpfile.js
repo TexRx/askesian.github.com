@@ -5,7 +5,6 @@
  */
 var cp = require('child_process');
 var del = require('del');
-var htmlmin = require('htmlmin');
 var path = require('path');
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
@@ -21,7 +20,10 @@ var config = require('./config.js');
 console.log(config);
 
 var messages = {
-  jekyll: '<span style="color: grey">Running:</span> $ jekyll build'
+  jekyll: {
+    development: 'Compiling Jekyll (Development)',
+    production: 'Compiling Jekyll (Production)'
+  }
 };
 
 /**
@@ -46,24 +48,59 @@ gulp.task('styles', function () {
 
   return gulp.src(config.sass.src)
     .pipe($.plumber())
-    .pipe($.sass(sassConfig))
     .pipe($.sourcemaps.init())
+    .pipe($.sass(sassConfig))
     .pipe($.autoprefixer(config.autoprefixer))
     .pipe(filter) // don't write sourcemaps of sourcemaps
-    .pipe($.csso())
     .pipe($.sourcemaps.write('.', { includeContent: false }))
     .pipe(filter.restore()) // restore original files
     .pipe(gulp.dest(config.sass.dest));
 });
 
-// Scripts
+/*
+ * Optimize Styles task
+ */
+gulp.task('optimize:styles', function () {
+  return gulp.src(config.optimize.styles.src)
+    .pipe($.csso(config.optimize.styles.options))
+    .pipe(gulp.dest(config.optimize.styles.dest))
+    .pipe($.size());
+});
+
+/*
+ * Scripts task
+ * Run scripts through jshint
+ */
 gulp.task('scripts', function () {
-  return true;
+  return gulp.src(config.scripts.src)
+    .pipe($.jshint())
+    .pipe(gulp.dest(config.scripts.dest));
+});
+
+/*
+ * Optimize Scripts task
+ */
+gulp.task('optimize:scripts', function () {
+  return gulp.src(config.optimize.scripts.src)
+    .pipe($.uglify(config.optimize.scripts.options))
+    .pipe($.concat('all.js'))
+    .pipe(gulp.dest(config.optimize.scripts.dest))
+    .pipe($.size());
 });
 
 // Images
 gulp.task('images', function () {
   return true;
+});
+
+/*
+ * Optimize Images task
+ */
+gulp.task('optimize:images', function () {
+  return gulp.src(config.optimize.images.src)
+    .pipe($.imagemin(config.optimize.images.options))
+    .pipe(gulp.dest(config.optimize.images.dest))
+    .pipe($.size());
 });
 
 /*
@@ -75,26 +112,26 @@ gulp.task('base64', ['styles'], function () {
     .pipe(gulp.dest(config.base64.dest));
 });
 
-// HTML
-gulp.task('html', ['jekyll'], function () {
-  return gulp.src(path.join(config.paths.deploy, '/**/*.html'))
-    .pipe($.htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest(config.paths.deploy))
-    .pipe(reload({ stream: true, once: true }));
+/*
+ * Optimize HTML task
+ */
+gulp.task('optimize:html', function () {
+  return gulp.src(config.optimize.html.src)
+    .pipe($.htmlmin(config.optimize.html.options))
+    .pipe(gulp.dest(config.optimize.html.dest));
 });
 
-// Jekyll
+/*
+ * Jekyll Development task
+ */
 gulp.task('jekyll', function (done) {
   var jekyllConfig = config.jekyll.development;
 
-  browserSync.notify(messages.jekyll);
+  browserSync.notify(messages.jekyll.development);
 
   return cp.spawn('bundle',
           [
-            'exec',
-            'jekyll',
-            'build',
-            '-q',
+            'exec', 'jekyll', 'build', '-q',
             '--source=' + jekyllConfig.src,
             '--destination=' + jekyllConfig.dest,
             '--config=' + jekyllConfig.config
@@ -104,18 +141,36 @@ gulp.task('jekyll', function (done) {
         .on('close', done);
 });
 
+/*
+ * Jekyll Production task
+ */
+gulp.task('jekyll:production', function (done) {
+  var jekyllConfig = config.jekyll.production;
+
+  browserSync.notify(messages.jekyll.production);
+
+  return cp.spawn('bundle',
+          [
+            'exec', 'jekyll', 'build', '-q',
+            '--source=' + jekyllConfig.src,
+            '--destination=' + jekyllConfig.dest,
+            '--config=' + jekyllConfig.config
+          ],
+          { stdio: 'inherit' }
+        )
+        .on('close', done);
+});
+
+/*
+ * Jekyll Rebuild task
+ */
 gulp.task('jekyll-rebuild', ['jekyll'], function () {
   reload();
 })
 
 /*
- * Run the build task and start a server with BrowserSync
+ * Build Development site
  */
-gulp.task('sync', ['build'], function () {
-  browserSync(config.browserSync.development);
-});
-
-// Build
 gulp.task('build', function (done) {
   $.sequence('delete',
     [
@@ -129,6 +184,37 @@ gulp.task('build', function (done) {
 });
 
 /*
+ * Build Production site
+ */
+gulp.task('build:production', function (done) {
+  $.sequence('delete', 'jekyll:production',
+    [
+      'styles',
+      'scripts',
+      'images'
+    ],
+    'base64',
+    [
+      'optimize:styles',
+      'optimize:scripts',
+      'optimize:images',
+      'optimize:html'
+    ],
+    done);
+});
+
+/*
+ * Run the build task and start a server with BrowserSync
+ */
+gulp.task('sync', ['build'], function () {
+  browserSync(config.browserSync.development);
+});
+
+gulp.task('sync:production', ['build:production'], function () {
+  browserSync(config.browserSync.production);
+});
+
+/*
  * Start BrowserSync and watch files for changes
  */
 gulp.task('watch', ['sync'], function () {
@@ -138,11 +224,15 @@ gulp.task('watch', ['sync'], function () {
   gulp.watch(config.watch.images, ['images']);
 });
 
-// Default
+/*
+ * Default task
+ */
 gulp.task('default', ['watch']);
 
-// Deploy
-gulp.task('deploy', function () {
-  return gulp.src('./build/**/*')
-    .pipe($.deploy());
+/*
+ * Deploy site to github
+ */
+gulp.task('deploy', ['sync:production'], function () {
+  return gulp.src(config.jekyll.production.dest + '/**/*')
+    .pipe($.ghPages(config.deploy));
 });

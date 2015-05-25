@@ -1,8 +1,10 @@
 .DS_Store
 *.log
 *.lock
+.publish/
 build/
 node_modules
 *.sublime-*
 _drafts/
 _site/
+*.map

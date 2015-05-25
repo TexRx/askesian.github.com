@@ -18,6 +18,12 @@ module.exports = {
         developmentAssets + '/js/*.js',
         developmentAssets + '/images/**'
       ]
+    },
+    production: {
+      server: {
+        baseDir: [production]
+      },
+      port: 9998
     }
   },
   delete: {
@@ -28,11 +34,21 @@ module.exports = {
       src: src,
       dest: development,
       config: '_config.yml'
+    },
+    production: {
+      src: src,
+      dest: production,
+      config: '_config.yml,_config.build.yml'
     }
   },
   sass: {
     src: srcAssets + '/styles/**/*.{sass,scss}',
     dest: developmentAssets + '/css',
+    options: {}
+  },
+  scripts: {
+    src: srcAssets + '/scripts/**/*.js',
+    dest: developmentAssets + '/js',
     options: {}
   },
   autoprefixer: {
@@ -73,5 +89,37 @@ module.exports = {
     scripts: srcAssets + '/scripts/**/*.js',
     images: srcAssets + '/images/**/*',
     svg: srcAssets + '/vectors/*.svg'
+  },
+  optimize: {
+    html: {
+      src: production + '/**/*.html',
+      dest: production,
+      options: {
+        collapseWhitespace: true
+      }
+    },
+    styles: {
+      src: developmentAssets + '/css/*.css',
+      dest: productionAssets + '/css/',
+      options: {}
+    },
+    scripts: {
+      src: developmentAssets + '/js/*.js',
+      dest: productionAssets + '/js',
+      options: {}
+    },
+    images: {
+      src: developmentAssets + '/images/**/*.{jpg,jpeg,png,gif}',
+      dest: productionAssets + '/images/',
+      options: {
+        optimizationLevel: 3,
+        progressive: true,
+        interlaced: true
+      }
+    }
+  },
+  deploy: {
+    branch: 'master',
+    push: false
   }
 };
