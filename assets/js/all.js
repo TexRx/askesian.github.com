@@ -1,1 +1,1 @@
-(function(i,n,o){var t=function(){return{init:function(){console.log("App is initialized")}}};window.App=t()}).call(this);
+(function(i,n){var t=({window:i,document:i.document},function(){return{init:function(){console.log("App is initialized")}}});i.Askesian=t(),t.init()}).call(this);
