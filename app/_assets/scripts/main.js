@@ -1,8 +1,9 @@
-(function (window, undefined) {
+(function (undefined) {
+  var self = this;
 
   var DOM = {
-    window: window,
-    document: window.document
+    window: self,
+    document: self.document
   };
 
   var askesian = function() {
