@@ -1,6 +1,11 @@
-(function (win, doc, undefined) {
+(function (window, undefined) {
 
-  var app = function() {
+  var DOM = {
+    window: window,
+    document: window.document
+  };
+
+  var askesian = function() {
     return {
       init: function() {
         console.log("App is initialized");
@@ -8,6 +13,8 @@
     }
   };
 
-  window.App = app();
+  window.Askesian = askesian();
+
+  askesian.init();
 
 }).call(this);
