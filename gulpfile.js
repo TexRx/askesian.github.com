@@ -17,8 +17,6 @@ var reload = browserSync.reload;
 var pkg = require('./package.json');
 var config = require('./config.js');
 
-console.log(config);
-
 var messages = {
   jekyll: {
     development: 'Compiling Jekyll (Development)',
@@ -38,7 +36,7 @@ gulp.task('delete', function (done) {
 /*
  * Copy extra files
  */
-gulp.task('copy:extras', function () {
+gulp.task('copy:extras:development', function () {
   return gulp.src(config.extras.development.src)
     .pipe(gulp.dest(config.extras.development.dest))
 });
@@ -87,6 +85,7 @@ gulp.task('optimize:styles', function () {
 gulp.task('scripts', function () {
   return gulp.src(config.scripts.src)
     .pipe($.jshint())
+    .pipe($.concat('all.js'))
     .pipe(gulp.dest(config.scripts.dest));
 });
 
