@@ -1,1 +1,0 @@
-(function(i){var n=this,t=({window:n,document:n.document},function(){return{init:function(){console.log("App is initialized")}}}());window.Askesian=t,t.init()}).call(this);
