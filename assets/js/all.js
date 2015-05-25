@@ -1,0 +1,1 @@
+(function(i,n,o){var t=function(){return{init:function(){console.log("App is initialized")}}};window.App=t()}).call(this);
