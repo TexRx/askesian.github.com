@@ -4,22 +4,28 @@
     <head>
         <meta charset="utf-8">
         <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width" />
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="@askesian">
-        <meta name="twitter:title" content="ASKESIAN">
-        <meta name="twitter:description" content="The home of askesian">
-        <meta name="twitter:creator" content="@askesian">
-        <meta name="twitter:domain" content="askesian.net">
+        {% include social-meta.html %}
         <link href="/assets/css/main.css" rel="stylesheet">
+        <script src="/assets/js/vendor-all.js"></script>
+        <script>
+            (function (window, undefined) {
+                var observer = new FontFaceObserver('Lato', {
+                    weight: 400
+                });
+
+                observer.check().then(function () {
+                    window.document.documentElement.className += " fonts-loaded";
+                });
+            }(this));
+        </script>
         <meta name="google-site-verification" content="U6YPESxNVHg41T6gYx640_oFdniD2hQZ6jaiYWJBsUY" />
         <link rel="shortcut icon" href="/assets/images/favicon.ico" />
     </head>
     <body>
         {% include header.html %}
-
-        {{ content }}
-
+        <div class="page">
+            {{ content }}
+        </div>
         {% include footer.html %}
         <script src="/assets/js/all.js"></script>
     </body>
