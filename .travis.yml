@@ -1,6 +1,9 @@
+install:
+  - npm install
+script:
+  - bundle exec jekyll build
 language: ruby
 rvm:
   - "1.9.3"
 branches:
-  - master
   - development
