@@ -47,7 +47,7 @@ module.exports = {
       dest: development
     },
     production: {
-      src: ['./CNAME', './README.md', './.travis.yml'],
+      src: ['CNAME', 'README.md', '.travis.yml'],
       dest: production
     }
   },
