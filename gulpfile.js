@@ -83,9 +83,17 @@ gulp.task('optimize:styles', function () {
  * Run scripts through jshint
  */
 gulp.task('scripts', function () {
+  var removeVendor = $.filter(['!vendor/']);
+  var includeOnlyVendor = $.filter(['vendor/**/*.js']);
+
   return gulp.src(config.scripts.src)
+    .pipe(removeVendor)
     .pipe($.jshint())
     .pipe($.concat('all.js'))
+    .pipe(removeVendor.restore())
+    .pipe(includeOnlyVendor)
+    .pipe($.concat('vendor-all.js'))
+    .pipe(includeOnlyVendor.restore())
     .pipe(gulp.dest(config.scripts.dest));
 });
 
@@ -93,9 +101,17 @@ gulp.task('scripts', function () {
  * Optimize Scripts task
  */
 gulp.task('optimize:scripts', function () {
+  var removeVendor = $.filter(['!vendor/']);
+  var includeOnlyVendor = $.filter(['vendor/**/*.js']);
+
   return gulp.src(config.optimize.scripts.src)
+    .pipe(removeVendor)
     .pipe($.uglify(config.optimize.scripts.options))
     .pipe($.concat('all.js'))
+    .pipe(removeVendor.restore())
+    .pipe(includeOnlyVendor)
+    .pipe($.concat('vendor-all.js'))
+    .pipe(includeOnlyVendor.restore())
     .pipe(gulp.dest(config.optimize.scripts.dest))
     .pipe($.size());
 });
@@ -113,6 +129,19 @@ gulp.task('optimize:images', function () {
     .pipe($.imagemin(config.optimize.images.options))
     .pipe(gulp.dest(config.optimize.images.dest))
     .pipe($.size());
+});
+
+/*
+ * Fonts task
+ */
+gulp.task('fonts', function () {
+  return gulp.src(config.fonts.development.src)
+    .pipe(gulp.dest(config.fonts.development.dest));
+});
+
+gulp.task('fonts:production', function () {
+  return gulp.src(config.fonts.production.src)
+    .pipe(gulp.dest(config.fonts.production.dest));
 });
 
 /*
@@ -190,6 +219,7 @@ gulp.task('build', function (done) {
       'styles',
       'scripts',
       'images',
+      'fonts',
       'copy:extras:development'
     ],
     'base64',
@@ -205,6 +235,7 @@ gulp.task('build:production', function (done) {
       'styles',
       'scripts',
       'images',
+      'fonts:production',
       'copy:extras:production'
     ],
     'base64',

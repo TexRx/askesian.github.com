@@ -41,13 +41,23 @@ module.exports = {
       config: '_config.yml,_config.build.yml'
     }
   },
+  fonts: {
+    development: {
+      src: srcAssets + '/fonts/**/*.{ttf,woff,woff2}',
+      dest: developmentAssets + '/fonts'
+    },
+    production: {
+      src: srcAssets + '/fonts/**/*.{css,ttf,woff,woff2}',
+      dest: productionAssets + '/fonts'
+    }
+  },
   extras: {
     development: {
-      src: ['./CNAME', './README.md'],
+      src: ['./CNAME', './README.md', './favicon.ico'],
       dest: development
     },
     production: {
-      src: ['CNAME', 'README.md', '.travis.yml'],
+      src: ['./CNAME', './README.md', './favicon.ico', './.travis.yml'],
       dest: production
     }
   },
@@ -57,7 +67,7 @@ module.exports = {
     options: {}
   },
   scripts: {
-    src: srcAssets + '/scripts/**/*.js',
+    src: [srcAssets + '/scripts/**/*.js'],
     dest: developmentAssets + '/js',
     options: {}
   },
@@ -114,7 +124,7 @@ module.exports = {
       options: {}
     },
     scripts: {
-      src: developmentAssets + '/js/*.js',
+      src: developmentAssets + '/js/**/*.js',
       dest: productionAssets + '/js',
       options: {}
     },
