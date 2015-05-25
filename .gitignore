@@ -1,5 +1,7 @@
 .DS_Store
 .publish/
+build/
+*.lock
 node_modules
 *.sublime-*
 _drafts/
