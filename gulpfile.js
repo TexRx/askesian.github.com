@@ -36,6 +36,19 @@ gulp.task('delete', function (done) {
 });
 
 /*
+ * Copy extra files
+ */
+gulp.task('copy:extras', function () {
+  return gulp.src(config.extras.development.src)
+    .pipe(gulp.dest(config.extras.development.dest))
+});
+
+gulp.task('copy:extras:production', function () {
+  return gulp.src(config.extras.production.src)
+    .pipe(gulp.dest(config.extras.production.dest))
+});
+
+/*
  * Generate CSS from Scss
  * Build sourcemaps
  * Minify CSS
@@ -177,7 +190,8 @@ gulp.task('build', function (done) {
       'jekyll',
       'styles',
       'scripts',
-      'images'
+      'images',
+      'copy:extras:development'
     ],
     'base64',
     done);
@@ -191,7 +205,8 @@ gulp.task('build:production', function (done) {
     [
       'styles',
       'scripts',
-      'images'
+      'images',
+      'copy:extras:production'
     ],
     'base64',
     [

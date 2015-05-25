@@ -41,6 +41,16 @@ module.exports = {
       config: '_config.yml,_config.build.yml'
     }
   },
+  extras: {
+    development: {
+      src: src + '/CNAME',
+      dest: development
+    },
+    production: {
+      src: src + '/CNAME',
+      dest: production
+    }
+  },
   sass: {
     src: srcAssets + '/styles/**/*.{sass,scss}',
     dest: developmentAssets + '/css',
