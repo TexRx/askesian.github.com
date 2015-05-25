@@ -43,11 +43,11 @@ module.exports = {
   },
   extras: {
     development: {
-      src: [src + '/CNAME', src + '/README.md', src + '/.travis.yml'],
+      src: ['./CNAME', './README.md'],
       dest: development
     },
     production: {
-      src: [src + '/CNAME', src + '/README.md', src + '/.travis.yml'],
+      src: ['./CNAME', './README.md', './.travis.yml'],
       dest: production
     }
   },
