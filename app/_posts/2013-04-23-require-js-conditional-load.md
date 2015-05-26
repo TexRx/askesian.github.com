@@ -3,7 +3,6 @@ layout: post
 title: Conditional loading with require.js
 ---
 
-####WHAT
 For one of my mobile-first projects, I wanted to use jQuery 2.0 by default, but fallback to jQuery 1.9.1 when the site was loaded in IE9 or lower. I wanted to use require.js as a script loader / pseudo-IoC container to make the site as composable and performant as possible. I had everything humming along fine, exept there was one snag. I couldn't figure out how to conditionally load the correct version of jQuery.
 
 ####WHY
