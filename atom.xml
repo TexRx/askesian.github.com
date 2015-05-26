@@ -4,7 +4,7 @@
  <title>askesian</title>
  <link href="http://askesian.net/atom.xml" rel="self"/>
  <link href="http://askesian.net/"/>
- <updated>2015-05-26T01:14:01-05:00</updated>
+ <updated>2015-05-26T01:20:44-05:00</updated>
  <id>http://askesian.net</id>
  <author>
    <name>Chris Wigley</name>
@@ -54,13 +54,13 @@
    <id>http://askesian.net/2013/04/23/require-js-conditional-load</id>
    <content type="html">&lt;h4&gt;WHAT&lt;/h4&gt;
 
-&lt;p&gt;For my current mobile-first project, and I wanted to use jQuery 2.0 by default, but fallback to jQuery 1.9.1 when the site is loaded in IE9 or lower. I wanted to use require.js as a script loader / pseudo-IoC container to make the site as composable and performant as possible. I had everything humming along fine, exept there was one snag. I couldn&amp;#39;t figure out to conditionally load different versions of a script.&lt;/p&gt;
+&lt;p&gt;For one of my mobile-first projects, I wanted to use jQuery 2.0 by default, but fallback to jQuery 1.9.1 when the site was loaded in IE9 or lower. I wanted to use require.js as a script loader / pseudo-IoC container to make the site as composable and performant as possible. I had everything humming along fine, exept there was one snag. I couldn&amp;#39;t figure out how to conditionally load the correct version of jQuery.&lt;/p&gt;
 
 &lt;h4&gt;WHY&lt;/h4&gt;
 
-&lt;p&gt;The reason I need to do this is because the site content is managed with a browser-based CMS that allows viewing the site pages as you&amp;#39;re editing content. Since the site content will be administered by content admins who are undoubtedly using some version of IE.&lt;/p&gt;
+&lt;p&gt;The reason I needed to do this was because the site content was managed with a browser-based CMS that allowed viewing the site pages as you would edit content. The site content was administered by content admins who are undoubtedly using some version of IE, so I had to fall back to jQuery pre-2.0 for IE8 support.&lt;/p&gt;
 
-&lt;p&gt;As you&amp;#39;ve probably read, jQuery 2.xx drops support for IE9 and lower. This is a good thing -- I want to send the smaller jQuery 2.0 file to portable devices that use cellular networks for data due to the inherent latency in said networks. Additionally, given the known mobile browser cache size limits, I wanted to be more confident that the jQuery script would be cached by the mobile browser.&lt;/p&gt;
+&lt;p&gt;As you&amp;#39;ve probably read, jQuery 2.xx drops support for IE8 and lower. This is a good thing -- I wanted to send the smaller jQuery 2.0 file to modern browsers, and especially portable devices that use cellular networks for data due to the inherent latency in said networks. Additionally, given the relative uncertainty around mobile device browser cache size limits, I wanted to be more confident that the jQuery script would always be cached by the mobile browser.&lt;/p&gt;
 
 &lt;h4&gt;HOW&lt;/h4&gt;
 
