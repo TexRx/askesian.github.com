@@ -1,8 +1,50 @@
-.main-nav-item {
-  padding-left: 0.25em;
-  padding-right: 0.25em;
+.main-nav {
+  background: $color-pomegranate;
+}
 
-  &:first-child {
-    margin-left: -0.25em;
+.wrapper--main-nav {
+  position: relative;
+  max-width: $max-width;
+  margin: auto;
+  padding: 1em;
+}
+
+.brand {
+  display: inline-block;
+  margin: 0;
+  text-align: left;
+}
+
+.brand-link {
+  color: $color-off-white;
+
+  &:hover,
+  &:focus {
+    border: 0;
+  }
+}
+
+.nav-list {
+  position: absolute;
+  left: auto;
+  right: 1em;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 2.5;
+}
+
+.nav-list__item {
+  display: inline-block;
+  padding: 0 1em;
+}
+
+.nav-list__link {
+  color: $color-off-white;
+
+  &:hover,
+  &:focus {
+    border: 0;
   }
 }

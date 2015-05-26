@@ -1,5 +1,5 @@
 ---
-title: gulp-filter has an exclusion filter gotcha
+title: Exclusion filter gotcha with gulp-filter
 layout: post
 ---
 
