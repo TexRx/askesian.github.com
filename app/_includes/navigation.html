@@ -1,0 +1,20 @@
+<nav class="main-nav">
+  <a class="main-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
+
+  {% comment %}
+    The code below dynamically generates a sidebar nav of pages with
+    `layout: page` in the front-matter. See readme for usage.
+  {% endcomment %}
+
+  {% assign pages_list = site.pages | sort:"url" %}
+  {% for node in pages_list %}
+    {% if node.title != null %}
+      {% if node.layout == "page" %}
+        <a class="main-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  <a class="main-nav-item" href="https://github.com/{{ site.github_username }}/">GitHub</a>
+  <a class="main-nav-item" href="https://twitter.com/{{ site.twitter_username }}/">Twitter</a>
+  <a class="main-nav-item" href="{{ "/atom.xml" | prepend: site.baseurl }}">RSS</a>
+</nav>

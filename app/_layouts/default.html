@@ -1,27 +1,8 @@
 <!DOCTYPE html>
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <title>{{ page.title }}</title>
-        {% include social-meta.html %}
-        <link href="/assets/css/main.css" rel="stylesheet">
-        <script src="/assets/js/vendor-all.js"></script>
-        <script>
-            (function (window, undefined) {
-                var observer = new FontFaceObserver('Lato', {
-                    weight: 400
-                });
-
-                observer.check().then(function () {
-                    window.document.documentElement.className += " fonts-loaded";
-                });
-            }(this));
-        </script>
-        <meta name="google-site-verification" content="U6YPESxNVHg41T6gYx640_oFdniD2hQZ6jaiYWJBsUY" />
-        <link rel="shortcut icon" href="/assets/images/favicon.ico" />
-    </head>
+<html lang="en-us">
+    {% include head.html %}
     <body>
+        {% include script-gtm.html %}
         {% include header.html %}
         <div class="page">
             {{ content }}

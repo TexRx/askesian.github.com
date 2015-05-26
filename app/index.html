@@ -1,23 +1,36 @@
 ---
 layout: default
+title: Home
 ---
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <!-- show most recent post as featured post -->
+  {% for post in site.posts limit:1 %}
+  <div class="post--featured">
+    <h1 class="post-title">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h1>
+    <div class="post-body">
+      <p class="post-excerpt"><span class="post-date post-date--inline">{{ post.date | date: "%b %-d, %Y" }}</span>{{ post.excerpt }}</p>
+      <a class="more-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Read the full post</a>
+    </div>
+  </div>
+  {% endfor %}
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
+  <div class="post-list">
+    {% for post in site.posts offset:1 limit:5 %}
+      <div>
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-      </li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <p class="post-excerpt">
+          {{ post.excerpt }}
+        </p>
+        <a class="more-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Read the full post</a>
+      </div>
     {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </div>
 
 </div>

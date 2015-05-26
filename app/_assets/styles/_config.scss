@@ -1,15 +1,29 @@
-$max-line-length: 40em;
-$max-width: 72em;
+// box-sizing
+$box-sizing: border-box;
 
+// padding and margins
+$wrapper-padding: 1em;
+
+// typography
 $body-font-family: Lato, Helvetica, sans-serif;
+$body-font-weight: 400;
 $heading-font-family: Lato, Helvetica, sans-serif;
+$heading-font-weight: 700;
 
 // colors
-$color-body-text: #333;
-$color-brand: #369;
-$color-links: #369;
-$color-links-hover: #016;
+$color-pomegranate: #bf616a;
+$color-body-text: #515151;
+$color-brand: $color-pomegranate;
+$color-links: $color-pomegranate;
+$color-links-hover: darken($color-pomegranate, 10%);
 
-$color-headings: #016;
+$color-headings: #313131;
 
-$color-off-white: #F1F1F1;
+$color-off-white: #FAFAFA;
+$color-dark-white: #F1F1F1;
+
+$color-code: $color-pomegranate;
+
+// widths
+$max-line-length: 45em;
+$max-width: 55em;

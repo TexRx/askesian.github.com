@@ -1,0 +1,8 @@
+.main-nav-item {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+
+  &:first-child {
+    margin-left: -0.25em;
+  }
+}

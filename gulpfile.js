@@ -60,11 +60,12 @@ gulp.task('styles', function () {
   return gulp.src(config.sass.src)
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
-    .pipe($.sass(sassConfig))
+    .pipe($.sass(sassConfig).on('error', $.sass.logError))
     .pipe($.autoprefixer(config.autoprefixer))
     .pipe(filter) // don't write sourcemaps of sourcemaps
     .pipe($.sourcemaps.write('.', { includeContent: false }))
     .pipe(filter.restore()) // restore original files
+    .pipe($.plumber.stop())
     .pipe(gulp.dest(config.sass.dest));
 });
 
@@ -83,12 +84,14 @@ gulp.task('optimize:styles', function () {
  * Run scripts through jshint
  */
 gulp.task('scripts', function () {
-  var removeVendor = $.filter(['!vendor/']);
+  var removeVendor = $.filter(['*', '!/vendor']);
   var includeOnlyVendor = $.filter(['vendor/**/*.js']);
 
   return gulp.src(config.scripts.src)
+    .pipe($.changed(config.scripts.dest))
     .pipe(removeVendor)
     .pipe($.jshint())
+    .pipe($.jshint.reporter(config.jshint.reporter, config.jshint.options))
     .pipe($.concat('all.js'))
     .pipe(removeVendor.restore())
     .pipe(includeOnlyVendor)

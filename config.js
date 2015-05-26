@@ -29,6 +29,12 @@ module.exports = {
   delete: {
     src: [developmentAssets]
   },
+  jshint: {
+    reporter: 'default',
+    options: {
+      verbose: true
+    }
+  },
   jekyll: {
     development: {
       src: src,
@@ -67,7 +73,7 @@ module.exports = {
     options: {}
   },
   scripts: {
-    src: [srcAssets + '/scripts/**/*.js'],
+    src: srcAssets + '/scripts/**/*.js',
     dest: developmentAssets + '/js',
     options: {}
   },
