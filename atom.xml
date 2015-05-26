@@ -4,7 +4,7 @@
  <title>askesian</title>
  <link href="http://askesian.net/atom.xml" rel="self"/>
  <link href="http://askesian.net/"/>
- <updated>2015-05-26T01:21:51-05:00</updated>
+ <updated>2015-05-26T08:33:10-05:00</updated>
  <id>http://askesian.net</id>
  <author>
    <name>Chris Wigley</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>gulp-filter has an exclusion filter gotcha</title>
+   <title>Exclusion filter gotcha with gulp-filter</title>
    <link href="http://askesian.net/2015/05/22/gulp-filter-exclusion-filter-gotcha/"/>
    <updated>2015-05-22T00:00:00-05:00</updated>
    <id>http://askesian.net/2015/05/22/gulp-filter-exclusion-filter-gotcha</id>
