@@ -1,5 +1,45 @@
+@charset "UTF-8";
+
+
+/* ===================================================
+   @Master Stylesheet
+   ================================================ */
+
+
+/* Configuration
+   ================================================ */
+
+/**
+ * Project configuration settings referenced first
+ * so that they can be used throughout the site
+ */
 @import "config";
-@import "base/manifest";
-@import "components/manifest";
-@import "modules/manifest";
-@import "layout/manifest";
+
+/* Askesian framework
+   ================================================= */
+
+/**
+ * Base Settings
+ */
+@import "base/fonts";
+@import "base/syntax";
+@import "base/standard";
+
+/**
+ * Components
+ */
+
+
+/**
+ * Modules
+ */
+@import "modules/navigation";
+@import "modules/page-header";
+@import "modules/post";
+@import "modules/page-footer";
+
+/**
+ * Layout
+ */
+@import "layout/page-layout";
+
