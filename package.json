@@ -5,7 +5,7 @@
   "main": "config.js",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^2.7.4",
+    "browser-sync": "^2.7.5",
     "del": "^1.2.0",
     "fontfaceobserver": "^1.4.12",
     "gulp": "^3.8.11",
