@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Conditional loading with require.js
+excerpt: For one of my mobile-first projects, I wanted to use jQuery 2.x by default, but fallback to jQuery 1.9.x when the site was loaded in IE8 or lower.
 ---
 
 **UPDATE**:
