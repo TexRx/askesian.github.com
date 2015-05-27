@@ -2,13 +2,37 @@
   margin-bottom: 4em;
 }
 
+.post-title {
+  margin-left: 25%;
+}
+
+.post-content {
+  overflow: hidden;
+}
+
+// [1] offset for inherent inline-block margin
+.post-meta {
+  display: inline-block;
+  width: 25%;
+  margin-right: -5px; // [1]
+  vertical-align: top;
+}
+
+.post-body {
+  display: inline-block;
+  width: 75%;
+}
+
 .post-date {
   display: block;
-  margin-top: -0.5em;
   color: $color-md-grey;
 }
 
-.post-link {
+.post-title__link {
   text-decoration: none;
   color: $color-body-text;
+}
+
+.post-more {
+
 }

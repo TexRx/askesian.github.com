@@ -8,10 +8,6 @@
 
     <ul class="nav-list">
 
-      <li class="nav-list__item">
-        <a class="nav-list__link{% if page.url == site.baseurl %} active{% endif %}" title="askesian home page" href="{{ site.baseurl }}/">Home</a>
-      </li>
-
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
         `layout: page` in the front-matter. See readme for usage.
@@ -29,15 +25,7 @@
       {% endfor %}
 
       <li class="nav-list__item">
-        <a class="nav-list__link" title="askesian on GitHub" href="https://github.com/{{ site.github_username }}/">GitHub</a>
-      </li>
-
-      <li class="nav-list__item">
-        <a class="nav-list__link" title="askesian on Twitter" href="https://twitter.com/{{ site.twitter_username }}/">Twitter</a>
-      </li>
-
-      <li class="nav-list__item">
-        <a class="nav-list__link" title="Subscribe to my RSS feed" href="{{ "/atom.xml" | prepend: site.baseurl }}">RSS</a>
+        <a class="nav-list__link{% if page.url == "/contact/" %} active{% endif %}" title="Get In Touch" href="/contact/">Contact</a>
       </li>
 
     </ul>

@@ -21,14 +21,31 @@
   <!-- Font Face Observer for fast loading of webfonts -->
   <script>
     (function (window, undefined) {
-        var observer = new FontFaceObserver('Lato', {
-            weight: 400
+      var lato400, lato700;
+      var docEl = window.document.documentElement;
+
+      if (COOKIEJAR.getCookie('fonts-loaded') === 'true') {
+        console.log('fonts-loaded');
+        docEl.className += " fonts-loaded";
+      }
+      else {
+        lato400 = new FontFaceObserver('Lato', {
+          weight: 400
+        });
+        lato700 = new FontFaceObserver('Lato', {
+          weight: 700
         });
 
-        observer.check().then(function () {
-            window.document.documentElement.className += " fonts-loaded";
-        });
-    }(this));
+        Promise.all([
+          lato400.check(),
+          lato700.check()
+          ]).then(function() {
+            docEl.className += " fonts-loaded";
+            COOKIEJAR.addCookie('fonts-loaded', 'true', 7);
+          });
+        }
+
+      }(this));
   </script>
   <!-- Google Site Verification -->
   <meta name="google-site-verification" content="U6YPESxNVHg41T6gYx640_oFdniD2hQZ6jaiYWJBsUY" />

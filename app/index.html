@@ -8,32 +8,62 @@ title: Home
   <!-- show most recent post as featured post -->
   {% for post in site.posts limit:1 %}
   <div class="post post--featured">
+
+    <h1 class="post-title">
+      <a class="post-title__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </h1>
+
     <div class="post-content">
-      <h1 class="post-title">
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h1>
-      <div class="post-excerpt">{{ post.excerpt }}</div>
-      <a class="more-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Read the full post</a>
+
+      <div class="post-meta">
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </div>
+
+      <div class="post-body">
+
+        <p class="post-excerpt">
+          {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+        </p>
+
+        <a class="post-more" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Read the full post</a>
+
+      </div>
+
     </div>
-    <div class="post-meta">
-      <span class="post-date post-date--inline">{{ post.date | date: "%b %-d, %Y" }}</span>
-    </div>
+
   </div>
   {% endfor %}
 
   <div class="post-list">
+
     {% for post in site.posts offset:1 limit:5 %}
       <div class="post">
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+
+        <h2 class="post-title">
+          <a class="post-title__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <span class="post-date post-date--inline">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <div class="post-excerpt">
-          {{ post.excerpt }}
+
+        <div class="post-content">
+
+          <div class="post-meta">
+            <span class="post-date post-date--inline">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </div>
+
+          <div class="post-body">
+
+            <p class="post-excerpt">
+              {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+            </p>
+
+            <a class="post-more" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Read the full post</a>
+
+          </div>
+
         </div>
-        <a class="more-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Read the full post</a>
+
       </div>
     {% endfor %}
+
   </div>
 
 </div>
