@@ -1,64 +1,17 @@
-var ASKESIAN = (function () {
+(function(window, document, undefined) {
+  var pageLinks = document.getElementsByTagName('a');
+  var loc = window.location;
 
-  // hold instance of ASKESIAN
-  var instance;
+  // handling visited links
+  // http://joelcalifa.com/blog/revisiting-visited
+  localStorage.setItem('visited-' + loc.pathname, true);
 
-  // DOM element cache for major elements
-  var DOM = {
-    window: window,
-    document: window.document
-  };
+  for (i = 0, len = pageLinks.length; i < len; i++) {
+    var link = pageLinks[i];
+    var pathName = link.pathname.substr(-1) !== '/' ? link.pathname + '/' : link.pathname;
 
-  var eventLookup = {};
-
-  function init() {
-    console.log('App is initialized');
-    this.name = "ASKESIAN";
-
-    return this;
-  }
-
-  function bindEventFor (target, evt, fn) {
-    if (!target && !evt) {
-      return;
+    if (link.host === loc.host && localStorage.getItem('visited-' + pathName)) {
+      link.dataset.visited = true;
     }
-
-    if (target.addEventListener) {
-      target.addEventListener(evt, fn, false);
-    } else {
-      target.attachEvent(evt, fn);
-    }
-
-    eventLookup[target] =  eventLookup[target] || {
-      events: []
-    };
-
-    eventLookup[target].events.push({event: evt, fn: fn});
-
-    return target;
   }
-
-  function getEventHandlersFor (target) {
-    return eventLookup[target];
-  }
-
-  return {
-
-    getInstance: function () {
-      if (!instance) {
-        instance = init.call(this);
-      }
-
-      return instance;
-    },
-
-    addEvent:  bindEventFor,
-
-    getEvents: getEventHandlersFor
-
-  };
-
-})();
-
-ASKESIAN.getInstance();
-
+}(window, document));

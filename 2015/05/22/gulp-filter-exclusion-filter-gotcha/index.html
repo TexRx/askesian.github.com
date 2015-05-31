@@ -1,16 +1,33 @@
 <!DOCTYPE html><html lang="en-us"><head><link href="http://gmpg.org/xfn/11" rel="profile"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta http-equiv="content-type" content="text/html; charset=utf-8"><!-- Mobile FTW --><meta name="viewport" content="width=device-width,initial-scale=1"><!-- Title --><title>Exclusion filter gotcha with gulp-filter &middot; askesian</title><!-- Social Meta --><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@askesian"><meta name="twitter:title" content="askesian"><meta name="twitter:description" content="Crabwalking through the mind of a learner"><meta name="twitter:creator" content="@askesian"><meta name="twitter:domain" content="http://askesian.net"><!-- CSS --><link href="/assets/css/main.css" rel="stylesheet"><!-- JS --><script src="/assets/js/vendor-all.js"></script><!-- Font Face Observer for fast loading of webfonts --><script>(function (window, undefined) {
-        var observer = new FontFaceObserver('Lato', {
-            weight: 400
+      var lato400, lato700;
+      var docEl = window.document.documentElement;
+
+      if (COOKIEJAR.getCookie('fonts-loaded') === 'true') {
+        console.log('fonts-loaded');
+        docEl.className += " fonts-loaded";
+      }
+      else {
+        lato400 = new FontFaceObserver('Lato', {
+          weight: 400
+        });
+        lato700 = new FontFaceObserver('Lato', {
+          weight: 700
         });
 
-        observer.check().then(function () {
-            window.document.documentElement.className += " fonts-loaded";
-        });
-    }(this));</script><!-- Google Site Verification --><meta name="google-site-verification" content="U6YPESxNVHg41T6gYx640_oFdniD2hQZ6jaiYWJBsUY"><!-- Icons --><link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-precomposed.png"><link rel="shortcut icon" href="/favicon.ico"><!-- RSS --><link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml"></head><body><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K3873T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        Promise.all([
+          lato400.check(),
+          lato700.check()
+          ]).then(function() {
+            docEl.className += " fonts-loaded";
+            COOKIEJAR.addCookie('fonts-loaded', 'true', 7);
+          });
+        }
+
+      }(this));</script><!-- Google Site Verification --><meta name="google-site-verification" content="U6YPESxNVHg41T6gYx640_oFdniD2hQZ6jaiYWJBsUY"><!-- Icons --><link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-precomposed.png"><link rel="shortcut icon" href="/favicon.ico"><!-- RSS --><link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml"></head><body><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K3873T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K3873T');</script><!-- End Google Tag Manager --><nav class="main-nav"><div class="wrapper--main-nav"><h1 class="brand"><a class="brand-link" href="/" title="home page of askesian.net">askesian</a></h1><ul class="nav-list"><li class="nav-list__item"><a class="nav-list__link" title="askesian home page" href="/">Home</a></li><li class="nav-list__item"><a class="nav-list__link" title="About" href="/about/">About</a></li><li class="nav-list__item"><a class="nav-list__link" title="askesian on GitHub" href="https://github.com/askesian/">GitHub</a></li><li class="nav-list__item"><a class="nav-list__link" title="askesian on Twitter" href="https://twitter.com/askesian/">Twitter</a></li><li class="nav-list__item"><a class="nav-list__link" title="Subscribe to my RSS feed" href="/atom.xml">RSS</a></li></ul></div></nav><div class="page"><article class="article"><header class="article-header"><h1 class="article-header-title">Exclusion filter gotcha with gulp-filter</h1><div class="article-header-date">May 2015</div></header><section class="article-body"><p>When using <a href="https://www.npmjs.com/package/gulp-filter">gulp-filter</a>, you might run into an issue when using an exclusion filter to remove certain files or directories from the source files passed to <code>gulp.src(...)</code>.</p><p>To illustrate, imagine a gulp task like the following:</p><div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">&#39;js&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+})(window,document,'script','dataLayer','GTM-K3873T');</script><!-- End Google Tag Manager --><nav class="main-nav"><div class="wrapper--main-nav"><h1 class="brand"><a class="brand-link" href="/" title="home page of askesian.net">askesian</a></h1><ul class="nav-list"><li class="nav-list__item"><a class="nav-list__link" title="About" href="/about/">About</a></li><li class="nav-list__item"><a class="nav-list__link" title="Blog" href="/blog/">Blog</a></li><li class="nav-list__item"><a class="nav-list__link" title="Work" href="/work/">Work</a></li><li class="nav-list__item"><a class="nav-list__link" title="Get In Touch" href="/contact/">Contact</a></li></ul></div></nav><div class="container"><article class="article"><header class="article-header"><h1 class="article-header-title">Exclusion filter gotcha with gulp-filter</h1><div class="article-header-date">May 2015</div></header><section class="article-body"><p>When using <a href="https://www.npmjs.com/package/gulp-filter">gulp-filter</a>, you might run into an issue when using an exclusion filter to remove certain files or directories from the source files passed to <code>gulp.src(...)</code>.</p><p>To illustrate, imagine a gulp task like the following:</p><div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">gulp</span><span class="p">.</span><span class="nx">task</span><span class="p">(</span><span class="s1">&#39;js&#39;</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
   <span class="kd">var</span> <span class="nx">filterVendorJs</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">filter</span><span class="p">([</span><span class="s1">&#39;!vendor&#39;</span><span class="p">]);</span>
 
   <span class="nx">gulp</span><span class="p">.</span><span class="nx">src</span><span class="p">(</span><span class="nx">config</span><span class="p">.</span><span class="nx">scripts</span><span class="p">.</span><span class="nx">src</span><span class="p">)</span>

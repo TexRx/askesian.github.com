@@ -1,13 +1,30 @@
 <!DOCTYPE html><html lang="en-us"><head><link href="http://gmpg.org/xfn/11" rel="profile"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta http-equiv="content-type" content="text/html; charset=utf-8"><!-- Mobile FTW --><meta name="viewport" content="width=device-width,initial-scale=1"><!-- Title --><title>404: Page not found &middot; askesian</title><!-- Social Meta --><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@askesian"><meta name="twitter:title" content="askesian"><meta name="twitter:description" content="Crabwalking through the mind of a learner"><meta name="twitter:creator" content="@askesian"><meta name="twitter:domain" content="http://askesian.net"><!-- CSS --><link href="/assets/css/main.css" rel="stylesheet"><!-- JS --><script src="/assets/js/vendor-all.js"></script><!-- Font Face Observer for fast loading of webfonts --><script>(function (window, undefined) {
-        var observer = new FontFaceObserver('Lato', {
-            weight: 400
+      var lato400, lato700;
+      var docEl = window.document.documentElement;
+
+      if (COOKIEJAR.getCookie('fonts-loaded') === 'true') {
+        console.log('fonts-loaded');
+        docEl.className += " fonts-loaded";
+      }
+      else {
+        lato400 = new FontFaceObserver('Lato', {
+          weight: 400
+        });
+        lato700 = new FontFaceObserver('Lato', {
+          weight: 700
         });
 
-        observer.check().then(function () {
-            window.document.documentElement.className += " fonts-loaded";
-        });
-    }(this));</script><!-- Google Site Verification --><meta name="google-site-verification" content="U6YPESxNVHg41T6gYx640_oFdniD2hQZ6jaiYWJBsUY"><!-- Icons --><link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-precomposed.png"><link rel="shortcut icon" href="/favicon.ico"><!-- RSS --><link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml"></head><body><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K3873T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        Promise.all([
+          lato400.check(),
+          lato700.check()
+          ]).then(function() {
+            docEl.className += " fonts-loaded";
+            COOKIEJAR.addCookie('fonts-loaded', 'true', 7);
+          });
+        }
+
+      }(this));</script><!-- Google Site Verification --><meta name="google-site-verification" content="U6YPESxNVHg41T6gYx640_oFdniD2hQZ6jaiYWJBsUY"><!-- Icons --><link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-precomposed.png"><link rel="shortcut icon" href="/favicon.ico"><!-- RSS --><link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml"></head><body><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K3873T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K3873T');</script><!-- End Google Tag Manager --><nav class="main-nav"><div class="wrapper--main-nav"><h1 class="brand"><a class="brand-link" href="/" title="home page of askesian.net">askesian</a></h1><ul class="nav-list"><li class="nav-list__item"><a class="nav-list__link" title="askesian home page" href="/">Home</a></li><li class="nav-list__item"><a class="nav-list__link" title="About" href="/about/">About</a></li><li class="nav-list__item"><a class="nav-list__link" title="askesian on GitHub" href="https://github.com/askesian/">GitHub</a></li><li class="nav-list__item"><a class="nav-list__link" title="askesian on Twitter" href="https://twitter.com/askesian/">Twitter</a></li><li class="nav-list__item"><a class="nav-list__link" title="Subscribe to my RSS feed" href="/atom.xml">RSS</a></li></ul></div></nav><div class="page"><div class="page"><h1 class="page-title">404: Page not found</h1><p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="/">Head back home</a> to try finding it again.</p></div></div><footer class="footer" role="complimentary"><div class="wrapper--footer"></div></footer><script src="/assets/js/all.js"></script></body></html>
+})(window,document,'script','dataLayer','GTM-K3873T');</script><!-- End Google Tag Manager --><nav class="main-nav"><div class="wrapper--main-nav"><h1 class="brand"><a class="brand-link" href="/" title="home page of askesian.net">askesian</a></h1><ul class="nav-list"><li class="nav-list__item"><a class="nav-list__link" title="About" href="/about/">About</a></li><li class="nav-list__item"><a class="nav-list__link" title="Blog" href="/blog/">Blog</a></li><li class="nav-list__item"><a class="nav-list__link" title="Work" href="/work/">Work</a></li><li class="nav-list__item"><a class="nav-list__link" title="Get In Touch" href="/contact/">Contact</a></li></ul></div></nav><div class="container"><div class="page"><h1 class="page-title">404: Page not found</h1><p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="/">Head back home</a> to try finding it again.</p></div></div><footer class="footer" role="complimentary"><div class="wrapper--footer"></div></footer><script src="/assets/js/all.js"></script></body></html>
