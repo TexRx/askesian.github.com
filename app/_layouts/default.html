@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
   {% include head.html %}
-  <body>
+
+  <body {% if page.class %}class="{{ page.class }}"{% endif %}>
+
     {% include script-gtm.html %}
+
     {% include navigation.html %}
-    <div class="page">
+
+    <div class="container">
+
       {{ content }}
+
     </div>
+
     {% include footer.html %}
+
+    <script src="/assets/js/all.js"></script>
+
   </body>
+
 </html>

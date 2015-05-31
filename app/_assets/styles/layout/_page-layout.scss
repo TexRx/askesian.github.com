@@ -1,5 +1,27 @@
+.container {
+  position: relative;
+  max-width: $max-width;
+  margin: auto;
+  padding-top: 4em;
+}
+
 .page {
   max-width: $max-width;
   margin: auto;
   padding: 1em;
+}
+
+.main {
+  display: inline-block;
+  width: 66.6667%;
+  padding: 0;
+  padding-right: 2em;
+}
+
+.articles {
+  display: inline-block;
+  width: 33.3333%;
+  margin-right: -4px;
+  margin-top: 2em;
+  vertical-align: top;
 }

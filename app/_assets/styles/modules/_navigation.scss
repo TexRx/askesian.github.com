@@ -1,33 +1,36 @@
 .main-nav {
-  background: $color-pomegranate;
+  background: $color-nav-bg;
+  text-align: right;
 }
 
 .wrapper--main-nav {
   position: relative;
   max-width: $max-width;
   margin: auto;
-  padding: 1em;
 }
 
 .brand {
-  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
   margin: 0;
   text-align: left;
+  background: $color-brand;
 }
 
 .brand-link {
-  color: $color-off-white;
+  display: block;
+  padding: 1rem;
+  color: $color-bg-base;
 
   &:hover,
   &:focus {
     border: 0;
+    color: $color-nav-brand-hover;
   }
 }
 
 .nav-list {
-  position: absolute;
-  left: auto;
-  right: 1em;
   display: inline-block;
   list-style-type: none;
   margin: 0;
@@ -40,12 +43,21 @@
 }
 
 .nav-list__link {
+  display: block;
   padding: 0.5em 0.875em;
-  color: $color-off-white;
+  color: $color-nav-links;
   text-transform: uppercase;
 
   &:hover,
   &:focus {
     border: 0;
+    border-radius: $border-radius;
+    background: $color-nav-links;
+    color: $color-bg-base;
+    transition: color $anim-hover-timing $anim-hover-easing, background $anim-hover-timing $anim-hover-easing;
+  }
+
+  &.active {
+    box-shadow: inset 0px -3px 0px 0px $color-nav-links;
   }
 }

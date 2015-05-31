@@ -1,0 +1,20 @@
+---
+layout: page
+title: Blog
+---
+
+{% for post in site.posts %}
+    <section class="post-list">
+      <article class="post">
+        <header class="post-header">
+          <h2 class="post-header__title">
+            <a class="post-header__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <p class="post-header__date">{{ post.date | date: "%b %-d, %Y" }}</p>
+        </header>
+        <div class="post-content">
+          {{ post.excerpt }}
+        </div>
+      </article>
+    </section>
+{% endfor %}

@@ -1,9 +1,25 @@
-.post--featured {
+.post-list {
+  margin-bottom: 3em;
+}
+
+.section--featured {
   margin-bottom: 4em;
 }
 
+.older-posts {
+  .section-title {
+    font-size: 80%;
+    text-transform: uppercase;
+    color: $color-lt-grey;
+  }
+}
+
+.post-header {
+  margin-bottom: 1em;
+}
+
 .post-title {
-  margin-left: 25%;
+  margin-bottom: 0;
 }
 
 .post-content {
@@ -21,16 +37,34 @@
 .post-body {
   display: inline-block;
   width: 75%;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .post-date {
   display: block;
-  color: $color-md-grey;
+  font-size: 90%;
+  color: $color-lt-grey;
 }
 
 .post-title__link {
   text-decoration: none;
-  color: $color-body-text;
+  color: $color-headings;
+
+  &:hover,
+  &:focus {
+    color: $color-headings-hover;
+  }
+
+  &[data-visited="true"] {
+    &:after {
+      content: " (seen)";
+      font-size: 50%;
+      color: $color-lt-grey;
+    }
+  }
 }
 
 .post-more {

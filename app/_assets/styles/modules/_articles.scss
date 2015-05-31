@@ -1,0 +1,31 @@
+.articles {
+
+}
+
+.articles--external {
+  padding: $wrapper-padding;
+  padding-top: 0;
+  overflow: hidden;
+  font-size: 90%;
+  background-color: $color-blue;
+  color: $color-bg-base;
+
+
+  h1 {
+    color: $lighter-same;
+  }
+}
+
+
+.article {
+  margin-bottom: 1em;
+}
+
+.articles--external .link--external {
+  color: $color-bg-base;
+}
+
+.external-article__date {
+  font-size: 75%;
+  color: $lighter-same;
+}

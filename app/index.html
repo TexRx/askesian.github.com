@@ -1,69 +1,26 @@
 ---
-layout: default
+layout: home
 title: Home
 ---
 
-<div class="home">
+<!-- show most recent post as featured post -->
+<section class="section section--featured">
 
-  <!-- show most recent post as featured post -->
   {% for post in site.posts limit:1 %}
-  <div class="post post--featured">
-
-    <h1 class="post-title">
-      <a class="post-title__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h1>
-
-    <div class="post-content">
-
-      <div class="post-meta">
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-      </div>
-
-      <div class="post-body">
-
-        <p class="post-excerpt">
-          {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-        </p>
-
-        <a class="post-more" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Read the full post</a>
-
-      </div>
-
-    </div>
-
-  </div>
+  {% include post-list.html post-offset=1 post-limit=0 %}
   {% endfor %}
 
-  <div class="post-list">
+</section>
 
-    {% for post in site.posts offset:1 limit:5 %}
-      <div class="post">
 
-        <h2 class="post-title">
-          <a class="post-title__link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+<section class="section older-posts">
 
-        <div class="post-content">
+  <header class="posts-header">
+    <h2 class="section-title">Older Articles</h2>
+  </header>
 
-          <div class="post-meta">
-            <span class="post-date post-date--inline">{{ post.date | date: "%b %-d, %Y" }}</span>
-          </div>
+  {% for post in site.posts offset:1 limit:5 %}
+  {% include post-list.html %}
+  {% endfor %}
 
-          <div class="post-body">
-
-            <p class="post-excerpt">
-              {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
-            </p>
-
-            <a class="post-more" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">Read the full post</a>
-
-          </div>
-
-        </div>
-
-      </div>
-    {% endfor %}
-
-  </div>
-
-</div>
+</section>

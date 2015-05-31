@@ -1,32 +1,73 @@
-// box-sizing
+/* BOX-SIZING
+ ============================================================ */
 $box-sizing: border-box;
 
-// padding and margins
+/* SPACING
+ ============================================================ */
 $wrapper-padding: 1em;
 
-// typography
+/* TYPOGRAPHY
+ ============================================================ */
 $body-font-family: Lato, Helvetica, sans-serif;
 $body-font-weight: 400;
 $heading-font-family: Lato, Helvetica, sans-serif;
 $heading-font-weight: 700;
 
-// colors
-$color-pomegranate: #bf616a;
-$color-body-text: #515151;
-$color-brand: $color-pomegranate;
-$color-links: $color-pomegranate;
-$color-links-hover: darken($color-pomegranate, 25%);
-
-$color-headings: #313131;
+/* COLORS
+ ============================================================ */
+// color palette
 
 $color-off-white: #FAFAFA;
 $color-dark-white: #F1F1F1;
-$color-lt-grey: #454545;
-$color-md-grey: #a7a7a7;
 
+$color-lt-grey: #a7a7a7;
+$color-med-grey: #515151;
+$color-dk-grey: #454545;
+$color-almost-black: #2D2D2D;
 
-$color-code: $color-pomegranate;
+$color-red: rgba(247, 72, 90, 1);
+$color-blue: rgba(0, 103, 167, 1);
+$color-dk-blue: rgba(18, 75, 90, 1);
+$color-yellow: rgba(255, 184, 0, 1);
 
-// widths
+// color tinting
+$darker-same: rgba(0,0,0,0.03);
+$lighter-same: rgba(255,255,255,0.35);
+$color-transparent: rgba(0,0,0,0);
+
+// main base colors
+$color-brand: $color-red;
+$color-bg-base: rgba(247, 244, 237, 1);
+$color-body-text: $color-med-grey;
+
+// links
+$color-links: $color-blue;
+$color-links-hover: darken($color-links, 10%);
+
+// headings
+$color-headings: $color-almost-black;
+$color-headings-hover: darken($color-almost-black, 5%);
+
+// navigation
+$color-nav-bg: transparent;
+$color-nav-brand: $color-brand;
+$color-nav-brand-hover: darken($color-nav-brand, 15%);
+$color-nav-links: $color-brand;
+
+// other (code, etc)
+$color-code: $color-red;
+
+/* ANIMATIONS
+ ============================================================ */
+$anim-hover-timing: 0.2s;
+$anim-hover-easing: ease-in-out;
+$anim-delay: 0.02s;
+
+/* BORDERS
+ ============================================================ */
+$border-radius: 0.05em;
+
+/* WIDTHS
+ ============================================================ */
 $max-line-length: 45em;
 $max-width: 55em;
