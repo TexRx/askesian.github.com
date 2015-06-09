@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en-us"><head><link href="http://gmpg.org/xfn/11" rel="profile"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta http-equiv="content-type" content="text/html; charset=utf-8"><!-- Mobile FTW --><meta name="viewport" content="width=device-width,initial-scale=1"><!-- Title --><title>Wi-Fi strength graph in the console &middot; askesian</title><!-- Social Meta --><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@askesian"><meta name="twitter:title" content="askesian"><meta name="twitter:description" content="Crabwalking through the mind of a learner"><meta name="twitter:creator" content="@askesian"><meta name="twitter:domain" content="http://askesian.net"><!-- CSS --><link href="/assets/css/main.css" rel="stylesheet"><!-- JS --><script src="/assets/js/vendor-all.js"></script><!-- Font Face Observer for fast loading of webfonts --><script>(function (window, undefined) {
+      var lato400, lato700;
+      var docEl = window.document.documentElement;
+
+      if (COOKIEJAR.getCookie('fonts-loaded') === 'true') {
+        console.log('fonts-loaded');
+        docEl.className += " fonts-loaded";
+      }
+      else {
+        lato400 = new FontFaceObserver('Lato', {
+          weight: 400
+        });
+        lato700 = new FontFaceObserver('Lato', {
+          weight: 700
+        });
+
+        Promise.all([
+          lato400.check(),
+          lato700.check()
+          ]).then(function() {
+            docEl.className += " fonts-loaded";
+            COOKIEJAR.addCookie('fonts-loaded', 'true', 7);
+          });
+        }
+
+      }(this));</script><!-- Google Site Verification --><meta name="google-site-verification" content="U6YPESxNVHg41T6gYx640_oFdniD2hQZ6jaiYWJBsUY"><!-- Icons --><link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-precomposed.png"><link rel="shortcut icon" href="/favicon.ico"><!-- RSS --><link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml"></head><body><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K3873T" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K3873T');</script><!-- End Google Tag Manager --><nav class="main-nav"><div class="wrapper--main-nav"><h1 class="brand"><a class="brand-link" href="/" title="home page of askesian.net">askesian</a></h1><ul class="nav-list"><li class="nav-list__item"><a class="nav-list__link" title="About" href="/about/">About</a></li><li class="nav-list__item"><a class="nav-list__link" title="Blog" href="/blog/">Blog</a></li><li class="nav-list__item"><a class="nav-list__link" title="Work" href="/work/">Work</a></li><li class="nav-list__item"><a class="nav-list__link" title="Get In Touch" href="/contact/">Contact</a></li></ul></div></nav><div class="container"><h1 class="page-title">Wi-Fi strength graph in the console</h1><p>After learning about <a href="http://zachholman.com/spark/" title="Spark repo on Github">spark</a> by <a href="https://github.com/holman" title="Zach Holman Github profile">Zach Holman</a>, and reviewing some of the <a href="https://github.com/holman/spark/wiki/Wicked-Cool-Usage" title="Examples using Spark">examples</a>, I wrote up this little <a href="https://gist.github.com/askesian/26ee4a76f147d1ee22e1" title="View Gist">bash helper</a> function for showing wi-fi strength in the console.</p><div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># objective:</span>
+<span class="c"># type wifi in the console and get a pretty little graph of your current wifi strength</span>
+<span class="c"># usage:</span>
+<span class="c"># &gt; wifi</span>
+<span class="c"># output:</span>
+<span class="c"># ▁▃▅█  59</span>
+
+<span class="c"># first install spark</span>
+brew install spark
+
+<span class="c"># add this alias to your ~/.zshrc file</span>
+<span class="nb">alias </span><span class="nv">airport</span><span class="o">=</span><span class="s1">&#39;/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/bin/airport&#39;</span>
+
+<span class="c"># add this function to your ~/.zshrc (or external function) file</span>
+wifi <span class="o">()</span> <span class="o">{</span>
+  <span class="k">if</span> <span class="o">[</span> <span class="k">$(</span>ifconfig en0 <span class="p">|</span> grep UP <span class="p">|</span> wc -l<span class="k">)</span> -eq <span class="m">1</span> <span class="o">]</span>
+   <span class="k">then</span>
+     <span class="nv">_linkQual</span><span class="o">=</span><span class="s2">&quot;`airport -I | grep agrCtlRSSI | cut -d&#39;:&#39; -f2 | sed &#39;s/-//g&#39;`&quot;</span>
+
+     <span class="k">if</span> <span class="o">[</span> <span class="nv">$_linkQual</span> -gt <span class="m">52</span> <span class="o">]</span> <span class="c"># &gt;75% link qual</span>
+     <span class="k">then</span>
+       <span class="nv">_linkSparked</span><span class="o">=</span><span class="k">$(</span>spark <span class="m">1</span> <span class="m">2</span> <span class="m">3</span> 4<span class="k">)</span>
+     <span class="k">elif</span> <span class="o">[</span> <span class="nv">$_linkQual</span> -gt <span class="m">35</span> <span class="o">]</span> <span class="c"># &gt;50% link qual</span>
+     <span class="k">then</span>
+       <span class="nv">_linkSparked</span><span class="o">=</span><span class="k">$(</span>spark <span class="m">1</span> <span class="m">2</span> <span class="m">3</span> 0<span class="k">)</span>
+     <span class="k">elif</span> <span class="o">[</span> <span class="nv">$_linkQual</span> -gt <span class="m">17</span> <span class="o">]</span> <span class="c"># 25% link qual</span>
+     <span class="k">then</span>
+       <span class="nv">_linkSparked</span><span class="o">=</span><span class="k">$(</span>spark <span class="m">1</span> <span class="m">2</span> <span class="m">0</span> 0<span class="k">)</span>
+     <span class="k">elif</span> <span class="o">[</span> <span class="nv">$_linkQual</span> -gt <span class="m">7</span> <span class="o">]</span> <span class="c"># 25% link qual</span>
+     <span class="k">then</span>
+       <span class="nv">_linkSparked</span><span class="o">=</span><span class="k">$(</span>spark <span class="m">1</span> <span class="m">0</span> <span class="m">0</span> 0<span class="k">)</span>
+     <span class="k">else</span> <span class="c"># &lt; 25%</span>
+       <span class="nv">_linkSparked</span><span class="o">=</span><span class="k">$(</span>spark <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> 0<span class="k">)</span>
+     <span class="k">fi</span>
+
+     <span class="nb">echo</span> <span class="nv">$_linkSparked</span> <span class="nv">$_linkQual</span>
+   <span class="k">fi</span>
+<span class="o">}</span>
+</code></pre></div><p>Credit: <a href="https://github.com/holman/spark/wiki/Wicked-Cool-Usage#wifi-link-quality-cryptix" title="Wi-Fi link quality Linux example">Example</a> by <a href="https://github.com/cryptix" title="Cryptix Github profile">@cryptix</a></p></div><footer class="footer" role="complimentary"><div class="wrapper--footer"></div></footer><script src="/assets/js/all.js"></script></body></html>

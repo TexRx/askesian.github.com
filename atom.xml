@@ -4,13 +4,62 @@
  <title>askesian</title>
  <link href="http://askesian.net/atom.xml" rel="self"/>
  <link href="http://askesian.net/"/>
- <updated>2015-05-31T18:14:41-05:00</updated>
+ <updated>2015-06-08T20:27:18-05:00</updated>
  <id>http://askesian.net</id>
  <author>
    <name>Chris Wigley</name>
    <email>cwigley@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Wi-Fi strength graph in the console</title>
+   <link href="http://askesian.net/2015/06/06/wifi-strength-in-the-console/"/>
+   <updated>2015-06-06T00:00:00-05:00</updated>
+   <id>http://askesian.net/2015/06/06/wifi-strength-in-the-console</id>
+   <content type="html">&lt;p&gt;After learning about &lt;a href=&quot;http://zachholman.com/spark/&quot; title=&quot;Spark repo on Github&quot;&gt;spark&lt;/a&gt; by &lt;a href=&quot;https://github.com/holman&quot; title=&quot;Zach Holman Github profile&quot;&gt;Zach Holman&lt;/a&gt;, and reviewing some of the &lt;a href=&quot;https://github.com/holman/spark/wiki/Wicked-Cool-Usage&quot; title=&quot;Examples using Spark&quot;&gt;examples&lt;/a&gt;, I wrote up this little &lt;a href=&quot;https://gist.github.com/askesian/26ee4a76f147d1ee22e1&quot; title=&quot;View Gist&quot;&gt;bash helper&lt;/a&gt; function for showing wi-fi strength in the console.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;c&quot;&gt;# objective:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# type wifi in the console and get a pretty little graph of your current wifi strength&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# usage:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# &amp;gt; wifi&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# output:&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# ▁▃▅█  59&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# first install spark&lt;/span&gt;
+brew install spark
+
+&lt;span class=&quot;c&quot;&gt;# add this alias to your ~/.zshrc file&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;alias &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;airport&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/bin/airport&amp;#39;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# add this function to your ~/.zshrc (or external function) file&lt;/span&gt;
+wifi &lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;ifconfig en0 &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; grep UP &lt;span class=&quot;p&quot;&gt;|&lt;/span&gt; wc -l&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt; -eq &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+     &lt;span class=&quot;nv&quot;&gt;_linkQual&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;`airport -I | grep agrCtlRSSI | cut -d&amp;#39;:&amp;#39; -f2 | sed &amp;#39;s/-//g&amp;#39;`&amp;quot;&lt;/span&gt;
+
+     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$_linkQual&lt;/span&gt; -gt &lt;span class=&quot;m&quot;&gt;52&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# &amp;gt;75% link qual&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+       &lt;span class=&quot;nv&quot;&gt;_linkSparked&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;spark &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3&lt;/span&gt; 4&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$_linkQual&lt;/span&gt; -gt &lt;span class=&quot;m&quot;&gt;35&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# &amp;gt;50% link qual&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+       &lt;span class=&quot;nv&quot;&gt;_linkSparked&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;spark &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3&lt;/span&gt; 0&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$_linkQual&lt;/span&gt; -gt &lt;span class=&quot;m&quot;&gt;17&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 25% link qual&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+       &lt;span class=&quot;nv&quot;&gt;_linkSparked&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;spark &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; 0&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$_linkQual&lt;/span&gt; -gt &lt;span class=&quot;m&quot;&gt;7&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 25% link qual&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;then&lt;/span&gt;
+       &lt;span class=&quot;nv&quot;&gt;_linkSparked&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;spark &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; 0&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# &amp;lt; 25%&lt;/span&gt;
+       &lt;span class=&quot;nv&quot;&gt;_linkSparked&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;spark &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; 0&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
+     &lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+
+     &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$_linkSparked&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$_linkQual&lt;/span&gt;
+   &lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Credit: &lt;a href=&quot;https://github.com/holman/spark/wiki/Wicked-Cool-Usage#wifi-link-quality-cryptix&quot; title=&quot;Wi-Fi link quality Linux example&quot;&gt;Example&lt;/a&gt; by &lt;a href=&quot;https://github.com/cryptix&quot; title=&quot;Cryptix Github profile&quot;&gt;@cryptix&lt;/a&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Exclusion filter gotcha with gulp-filter</title>
