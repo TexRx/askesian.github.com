@@ -59,11 +59,11 @@ module.exports = {
   },
   extras: {
     development: {
-      src: ['./CNAME', './README.md', './favicon.ico'],
+      src: ['./CNAME', './README.md', src + '/favicon.ico', src + '/robots.txt'],
       dest: development
     },
     production: {
-      src: ['./CNAME', './README.md', './favicon.ico', './.travis.yml'],
+      src: ['./CNAME', './README.md', src + '/favicon.ico', './.travis.yml', src + '/robots.txt'],
       dest: production
     }
   },
