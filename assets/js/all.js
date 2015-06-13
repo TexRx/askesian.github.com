@@ -1,4 +1,6 @@
 (function(window, document, undefined) {
+  'use strict';
+
   var pageLinks = document.getElementsByTagName('a');
   var loc = window.location;
 
@@ -6,7 +8,7 @@
   // http://joelcalifa.com/blog/revisiting-visited
   localStorage.setItem('visited-' + loc.pathname, true);
 
-  for (i = 0, len = pageLinks.length; i < len; i++) {
+  for (var i = 0, len = pageLinks.length; i < len; i++) {
     var link = pageLinks[i];
     var pathName = link.pathname.substr(-1) !== '/' ? link.pathname + '/' : link.pathname;
 
