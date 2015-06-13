@@ -30,6 +30,10 @@ module.exports = {
     src: [developmentAssets, './.publish']
   },
   jshint: {
+    src: [
+      srcAssets + '/scripts/**/*.js',
+      '!' + srcAssets + '/scripts/vendor{,/**}'
+    ],
     reporter: 'default',
     options: {
       verbose: true

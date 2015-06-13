@@ -67,7 +67,7 @@ gulp.task('optimize:styles', () => {
  * JSHint task
  */
 gulp.task('jshint', () => {
-  return gulp.src(config.scripts.src)
+  return gulp.src(config.jshint.src)
     .pipe(reload({stream: true, once: true}))
     .pipe($.jshint())
     .pipe($.jshint.reporter(config.jshint.reporter, config.jshint.options))
@@ -263,7 +263,7 @@ gulp.task('sync:production', ['build:production'], () => {
 gulp.task('watch', ['sync'], () => {
   gulp.watch(config.watch.jekyll, ['jekyll-rebuild']);
   gulp.watch(config.watch.sass, ['styles']);
-  gulp.watch(config.watch.scripts, ['scripts']);
+  gulp.watch(config.watch.scripts, ['jshint', 'scripts']);
   gulp.watch(config.watch.images, ['images']);
 });
 
