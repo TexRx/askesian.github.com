@@ -226,7 +226,7 @@ gulp.task('build', ['clean'], done => {
   $.sequence(
     'jekyll',
     'styles',
-    ['scripts', 'images', 'fonts', 'copy:extras:development'],
+    ['jshint', 'scripts', 'images', 'fonts', 'copy:extras:development'],
     'base64',
     done
   );
@@ -238,7 +238,7 @@ gulp.task('build', ['clean'], done => {
 gulp.task('build:production', ['clean'], done => {
   $.sequence(
     'jekyll:production',
-    'styles'
+    'styles',
     ['scripts', 'images', 'fonts:production', 'copy:extras:production'],
     'base64',
     ['optimize:styles', 'optimize:scripts', 'optimize:images', 'optimize:html'],
