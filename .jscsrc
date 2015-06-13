@@ -1,3 +1,6 @@
 {
-
+  "esnext": true,
+  "preset": "google",
+  "disallowSpacesInAnonymousFunctionExpression": null,
+  "excludeFiles": ["node_modules/**"]
 }
